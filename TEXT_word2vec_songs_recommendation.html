@@ -13084,7 +13084,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13105,7 +13105,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pwd</span>
@@ -13121,13 +13121,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;/Users/ElenaMc/Desktop/ANÁLISIS DE DATOS NO ESTRUCTURADOS/TEXT&#39;</pre>
+<pre>&#39;/Users/ElenaMc/Desktop/ANÁLISIS DE DATOS NO ESTRUCTURADOS/TEXT/practica-songs2vec&#39;</pre>
 </div>
 
 </div>
@@ -13138,7 +13138,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;hhgroups_merge_28_05.csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -13155,7 +13155,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13240,7 +13240,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -13254,7 +13254,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span>
@@ -13270,7 +13270,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13287,7 +13287,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_corpus</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13333,7 +13333,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">song</span>
@@ -13349,7 +13349,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -13366,38 +13366,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">text_corpus</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;soy&#39;, &#39;yo&#39;, &#39;hello&#39;, &#39;soy&#39;, &#39;el&#39;, &#39;arbel&#39;, &#39;lópez&#39;, &#39;negrata&#39;, &#39;esta&#39;, &#39;a&#39;, &#39;mi&#39;, &#39;lado&#39;, &#39;el&#39;, &#39;encargado&#39;, &#39;de&#39;, &#39;subir&#39;, &#39;al&#39;, &#39;tope&#39;, &#39;im&#39;, &#39;ready&#39;, &#39;for&#39;, &#39;you&#39;, &#39;we&#39;, &#39;are&#39;, &#39;the&#39;, &#39;hustler&#39;, &#39;hablamos&#39;, &#39;de&#39;, &#39;películas&#39;, &#39;de&#39;, &#39;calle&#39;, &#39;y&#39;, &#39;de&#39;, &#39;basket&#39;, &#39;mi&#39;, &#39;estado&#39;, &#39;mental&#39;, &#39;no&#39;, &#39;es&#39;, &#39;saludable&#39;, &#39;pero&#39;, &#39;no&#39;, &#39;estoy&#39;, &#39;tan&#39;, &#39;loco&#39;, &#39;mi&#39;, &#39;hermano&#39;, &#39;para&#39;, &#39;ahorcarme&#39;, &#39;con&#39;, &#39;un&#39;, &#39;cable&#39;, &#39;si&#39;, &#39;tu&#39;, &#39;quieres&#39;, &#39;venr&#39;, &#39;voy&#39;, &#39;a&#39;, &#39;mostrarte&#39;, &#39;que&#39;, &#39;la&#39;, &#39;vida&#39;, &#39;no&#39;, &#39;es&#39;, &#39;amable&#39;, &#39;tus&#39;, &#39;pechos&#39;, &#39;son&#39;, &#39;pequeños&#39;, &#39;y&#39;, &#39;tu&#39;, &#39;culo&#39;, &#39;grande&#39;, &#39;mami&#39;, &#39;que&#39;, &#39;no&#39;, &#39;es&#39;, &#39;broma&#39;, &#39;prefiero&#39;, &#39;tu&#39;, &#39;sonrisa&#39;, &#39;que&#39;, &#39;tetas&#39;, &#39;de&#39;, &#39;silicona&#39;, &#39;soy&#39;, &#39;la&#39;, &#39;perdición&#39;, &#39;de&#39;, &#39;las&#39;, &#39;que&#39;, &#39;prueban&#39;, &#39;mi&#39;, &#39;néctar&#39;, &#39;las&#39;, &#39;redes&#39;, &#39;sociales&#39;, &#39;me&#39;, &#39;infectan&#39;, &#39;sin&#39;, &#39;usar&#39;, &#39;condón&#39;, &#39;ey&#39;, &#39;mami&#39;, &#39;yo&#39;, &#39;no&#39;, &#39;quiero&#39;, &#39;los&#39;, &#39;grammys&#39;, &#39;yo&#39;, &#39;quiero&#39;, &#39;mantenerte&#39;, &#39;y&#39;, &#39;verte&#39;, &#39;en&#39;, &#39;mi&#39;, &#39;casa&#39;, &#39;de&#39;, &#39;miami&#39;, &#39;que&#39;, &#39;tú&#39;, &#39;me&#39;, &#39;dejas&#39;, &#39;buah&#39;, &#39;no&#39;, &#39;pasa&#39;, &#39;nada&#39;, &#39;se&#39;, &#39;pasa&#39;, &#39;mal&#39;, &#39;un&#39;, &#39;mes&#39;, &#39;o&#39;, &#39;dos&#39;, &#39;ya&#39;, &#39;no&#39;, &#39;confío&#39;, &#39;en&#39;, &#39;enamoradas&#39;, &#39;estoy&#39;, &#39;ready&#39;, &#39;estoy&#39;, &#39;preparao&#39;, &#39;yo&#39;, &#39;me&#39;, &#39;como&#39;, &#39;la&#39;, &#39;vida&#39;, &#39;sin&#39;, &#39;prisas&#39;, &#39;de&#39;, &#39;bocao&#39;, &#39;en&#39;, &#39;bocao&#39;, &#39;ay&#39;, &#39;chica&#39;, &#39;qué&#39;, &#39;me&#39;, &#39;dices&#39;, &#39;que&#39;, &#39;me&#39;, &#39;amas&#39;, &#39;mi&#39;, &#39;vida&#39;, &#39;una&#39;, &#39;locura&#39;, &#39;yo&#39;, &#39;prefiero&#39;, &#39;sexo&#39;, &#39;y&#39;, &#39;fuera&#39;, &#39;de&#39;, &#39;mi&#39;, &#39;cama&#39;, &#39;locura&#39;, &#39;ma&#39;, &#39;es&#39;, &#39;lo&#39;, &#39;que&#39;, &#39;traigo&#39;, &#39;antes&#39;, &#39;decía&#39;, &#39;te&#39;, &#39;quiero&#39;, &#39;ahora&#39;, &#39;solo&#39;, &#39;te&#39;, &#39;cabalgo&#39;, &#39;soy&#39;, &#39;el&#39;, &#39;príncipe&#39;, &#39;grosero&#39;, &#39;el&#39;, &#39;rey&#39;, &#39;de&#39;, &#39;los&#39;, &#39;embusteros&#39;, &#39;yo&#39;, &#39;era&#39;, &#39;lindo&#39;, &#39;y&#39;, &#39;bueno&#39;, &#39;pero&#39;, &#39;malo&#39;, &#39;me&#39;, &#39;volvieron&#39;, &#39;busco&#39;, &#39;la&#39;, &#39;sal&#39;, &#39;de&#39;, &#39;la&#39;, &#39;vida&#39;, &#39;en&#39;, &#39;pequeñas&#39;, &#39;cosas&#39;, &#39;tu&#39;, &#39;deja&#39;, &#39;de&#39;, &#39;cantar&#39;, &#39;que&#39;, &#39;en&#39;, &#39;vez&#39;, &#39;de&#39;, &#39;rimas&#39;, &#39;haces&#39;, &#39;prosas&#39;, &#39;me&#39;, &#39;comunican&#39;, &#39;por&#39;, &#39;mensaje&#39;, &#39;que&#39;, &#39;estás&#39;, &#39;muerto&#39;, &#39;corta&#39;, &#39;negrata&#39;, &#39;celebremos&#39;, &#39;esto&#39;, &#39;tras&#39;, &#39;breve&#39;, &#39;pausa&#39;, &#39;conectamos&#39;, &#39;al&#39;, &#39;estudio&#39;, &#39;la&#39;, &#39;rímas&#39;, &#39;que&#39;, &#39;sobran&#39;, &#39;las&#39;, &#39;rento&#39;, &#39;pa&#39;, &#39;marcianos&#39;, &#39;de&#39;, &#39;mercurio&#39;, &#39;estamos&#39;, &#39;ready&#39;, &#39;me&#39;, &#39;escuchan&#39;, &#39;hasta&#39;, &#39;los&#39;, &#39;heavys&#39;, &#39;tengo&#39;, &#39;las&#39;, &#39;uñas&#39;, &#39;muy&#39;, &#39;largas&#39;, &#39;me&#39;, &#39;parezco&#39;, &#39;a&#39;, &#39;freddy&#39;, &#39;no&#39;, &#39;me&#39;, &#39;imagino&#39;, &#39;a&#39;, &#39;fat&#39;, &#39;joe&#39;, &#39;en&#39;, &#39;unos&#39;, &#39;levys&#39;, &#39;doy&#39;, &#39;quinientos&#39;, &#39;euros&#39;, &#39;al&#39;, &#39;que&#39;, &#39;consiga&#39;, &#39;la&#39;, &#39;peli&#39;, &#39;de&#39;, &#39;belly&#39;, &#39;estoy&#39;, &#39;ready&#39;, &#39;estoy&#39;, &#39;preparao&#39;, &#39;yo&#39;, &#39;me&#39;, &#39;como&#39;, &#39;la&#39;, &#39;vida&#39;, &#39;sin&#39;, &#39;prisas&#39;, &#39;de&#39;, &#39;bocao&#39;, &#39;en&#39;, &#39;bocao&#39;, &#39;ay&#39;, &#39;chica&#39;, &#39;qué&#39;, &#39;me&#39;, &#39;dices&#39;, &#39;que&#39;, &#39;me&#39;, &#39;amas&#39;, &#39;mi&#39;, &#39;vida&#39;, &#39;una&#39;, &#39;locura&#39;, &#39;yo&#39;, &#39;prefiero&#39;, &#39;sexo&#39;, &#39;y&#39;, &#39;fuera&#39;, &#39;de&#39;, &#39;mi&#39;, &#39;cama&#39;, &#39;cambio&#39;, &#39;rimas&#39;, &#39;por&#39;, &#39;billetes&#39;, &#39;tu&#39;, &#39;no&#39;, &#39;pareces&#39;, &#39;el&#39;, &#39;coscu&#39;, &#39;te&#39;, &#39;pareces&#39;, &#39;al&#39;, &#39;torete&#39;, &#39;te&#39;, &#39;dicen&#39;, &#39;vete&#39;, &#39;te&#39;, &#39;la&#39;, &#39;tocas&#39;, &#39;pensando&#39;, &#39;en&#39;, &#39;rajoy&#39;, &#39;en&#39;, &#39;el&#39;, &#39;retrete&#39;, &#39;tu&#39;, &#39;no&#39;, &#39;eres&#39;, &#39;calle&#39;, &#39;eres&#39;, &#39;un&#39;, &#39;juguete&#39;, &#39;eres&#39;, &#39;muy&#39;, &#39;fea&#39;, &#39;no&#39;, &#39;te&#39;, &#39;mires&#39;, &#39;al&#39;, &#39;espejo&#39;, &#39;pareces&#39;, &#39;frida&#39;, &#39;khalo&#39;, &#39;con&#39;, &#39;un&#39;, &#39;gato&#39;, &#39;de&#39;, &#39;entrecejo&#39;, &#39;hablan&#39;, &#39;los&#39;, &#39;que&#39;, &#39;no&#39;, &#39;saben&#39;, &#39;o&#39;, &#39;los&#39;, &#39;que&#39;, &#39;no&#39;, &#39;deben&#39;, &#39;ya&#39;, &#39;me&#39;, &#39;cansa&#39;, &#39;el&#39;, &#39;mismo&#39;, &#39;estilo&#39;, &#39;mi&#39;, &#39;mensaje&#39;, &#39;es&#39;, &#39;que&#39;, &#39;lo&#39;, &#39;nuevo&#39;, &#39;prueben&#39;, &#39;estoy&#39;, &#39;ready&#39;, &#39;estoy&#39;, &#39;preparao&#39;, &#39;yo&#39;, &#39;me&#39;, &#39;como&#39;, &#39;la&#39;, &#39;vida&#39;, &#39;sin&#39;, &#39;prisas&#39;, &#39;de&#39;, &#39;bocao&#39;, &#39;en&#39;, &#39;bocao&#39;, &#39;ay&#39;, &#39;chica&#39;, &#39;qué&#39;, &#39;me&#39;, &#39;dices&#39;, &#39;que&#39;, &#39;me&#39;, &#39;amas&#39;, &#39;mi&#39;, &#39;vida&#39;, &#39;una&#39;, &#39;locura&#39;, &#39;yo&#39;, &#39;prefiero&#39;, &#39;sexo&#39;, &#39;y&#39;, &#39;fuera&#39;, &#39;de&#39;, &#39;mi&#39;, &#39;cama&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Seed for the RNG, to make the results reproducible.</span>
@@ -13444,7 +13413,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">text_corpus</span><span class="p">)</span>
@@ -13460,7 +13429,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -13477,7 +13446,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
@@ -13507,7 +13476,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>--- 40.676105976104736 seconds ---
+<pre>--- 43.290398836135864 seconds ---
 </pre>
 </div>
 </div>
@@ -13518,7 +13487,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span> <span class="o">=</span> <span class="n">w2v</span><span class="o">.</span><span class="n">Word2Vec</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;trained&quot;</span><span class="p">,</span> <span class="s2">&quot;songs2vectors.w2v&quot;</span><span class="p">))</span>
@@ -13546,7 +13515,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;cariño&quot;</span><span class="p">)</span>
@@ -13562,22 +13531,22 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;lucifer&#39;, 0.9052531123161316),
- (&#39;empeño&#39;, 0.8971988558769226),
- (&#39;apoyo&#39;, 0.8953958749771118),
- (&#39;encanto&#39;, 0.8953239917755127),
- (&#39;adios&#39;, 0.8939310312271118),
- (&#39;carisma&#39;, 0.8896495699882507),
- (&#39;afecto&#39;, 0.8894045352935791),
- (&#39;ande&#39;, 0.8893129825592041),
- (&#39;aprecio&#39;, 0.8886246085166931),
- (&#39;compañero&#39;, 0.8879709243774414)]</pre>
+<pre>[(&#39;encanto&#39;, 0.9074733853340149),
+ (&#39;apoyo&#39;, 0.899014949798584),
+ (&#39;orgullo&#39;, 0.8870354294776917),
+ (&#39;trizas&#39;, 0.8868774771690369),
+ (&#39;afecto&#39;, 0.8849858641624451),
+ (&#39;abrigo&#39;, 0.8842648267745972),
+ (&#39;maka&#39;, 0.8838594555854797),
+ (&#39;sufrimiento&#39;, 0.8821490406990051),
+ (&#39;carisma&#39;, 0.88211590051651),
+ (&#39;lastima&#39;, 0.8809444904327393)]</pre>
 </div>
 
 </div>
@@ -13588,7 +13557,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;chica&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -13604,17 +13573,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;niña&#39;, 0.9459370374679565),
- (&#39;zorra&#39;, 0.939417839050293),
- (&#39;amiga&#39;, 0.9152703881263733),
- (&#39;guarra&#39;, 0.9106343984603882),
- (&#39;carita&#39;, 0.9098654389381409)]</pre>
+<pre>[(&#39;niña&#39;, 0.9557207822799683),
+ (&#39;zorra&#39;, 0.928577184677124),
+ (&#39;golfa&#39;, 0.9262560606002808),
+ (&#39;amiga&#39;, 0.9224379658699036),
+ (&#39;carita&#39;, 0.9178491234779358)]</pre>
 </div>
 
 </div>
@@ -13625,7 +13594,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;chico&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -13641,17 +13610,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;chaval&#39;, 0.9223148822784424),
- (&#39;macho&#39;, 0.9141399264335632),
- (&#39;niñato&#39;, 0.913705050945282),
- (&#39;novato&#39;, 0.9099128842353821),
- (&#39;cabrón&#39;, 0.9095392823219299)]</pre>
+<pre>[(&#39;novato&#39;, 0.928665816783905),
+ (&#39;chaval&#39;, 0.9231171607971191),
+ (&#39;cabrón&#39;, 0.9205746650695801),
+ (&#39;niñato&#39;, 0.9152629375457764),
+ (&#39;niño&#39;, 0.9146977663040161)]</pre>
 </div>
 
 </div>
@@ -13662,7 +13631,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;café&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -13678,17 +13647,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;desayuno&#39;, 0.9181857705116272),
- (&#39;rayo&#39;, 0.9140535593032837),
- (&#39;gasolina&#39;, 0.9137880206108093),
- (&#39;cubata&#39;, 0.9136859178543091),
- (&#39;tinto&#39;, 0.9116435050964355)]</pre>
+<pre>[(&#39;cubata&#39;, 0.9258613586425781),
+ (&#39;cuchillo&#39;, 0.9213966131210327),
+ (&#39;cenicero&#39;, 0.9212646484375),
+ (&#39;desayuno&#39;, 0.9172535538673401),
+ (&#39;cigarro&#39;, 0.9165142774581909)]</pre>
 </div>
 
 </div>
@@ -13699,7 +13668,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;negro&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -13715,17 +13684,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;blanco&#39;, 0.9009142518043518),
- (&#39;verde&#39;, 0.8851000070571899),
- (&#39;rojo&#39;, 0.8842369318008423),
- (&#39;azul&#39;, 0.8780838251113892),
- (&#39;medio&#39;, 0.8654257655143738)]</pre>
+<pre>[(&#39;blanco&#39;, 0.9043447971343994),
+ (&#39;verde&#39;, 0.8821098804473877),
+ (&#39;rojo&#39;, 0.873436450958252),
+ (&#39;medio&#39;, 0.8557026386260986),
+ (&#39;seco&#39;, 0.8502323627471924)]</pre>
 </div>
 
 </div>
@@ -13744,7 +13713,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">doesnt_match</span><span class="p">(</span><span class="s2">&quot;amor cariño dulce pasión&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
@@ -13772,7 +13741,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -13789,7 +13758,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">doesnt_match</span><span class="p">(</span><span class="s2">&quot;desayuno almuerzo merienda fruta&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
@@ -13805,7 +13774,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -13822,7 +13791,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="n">positive</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;mujer&#39;</span><span class="p">,</span> <span class="s1">&#39;bonita&#39;</span><span class="p">],</span> <span class="n">negative</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;fea&#39;</span><span class="p">])</span>
@@ -13839,22 +13808,22 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;niña&#39;, 0.846765398979187),
- (&#39;princesa&#39;, 0.8398846983909607),
- (&#39;preciosa&#39;, 0.8358274698257446),
- (&#39;sonrisa&#39;, 0.8335707783699036),
- (&#39;linda&#39;, 0.8296775221824646),
- (&#39;persona&#39;, 0.8205569982528687),
- (&#39;pequeña&#39;, 0.8179491758346558),
- (&#39;hermosa&#39;, 0.8127824664115906),
- (&#39;estrella&#39;, 0.8112472295761108),
- (&#39;perdóname&#39;, 0.8079579472541809)]</pre>
+<pre>[(&#39;preciosa&#39;, 0.8568332195281982),
+ (&#39;bella&#39;, 0.8496769070625305),
+ (&#39;niña&#39;, 0.8476463556289673),
+ (&#39;hermosa&#39;, 0.8466269969940186),
+ (&#39;estrella&#39;, 0.8463295698165894),
+ (&#39;sonrisa&#39;, 0.8406922221183777),
+ (&#39;linda&#39;, 0.8405869007110596),
+ (&#39;compañía&#39;, 0.8380253314971924),
+ (&#39;buscaba&#39;, 0.8371127843856812),
+ (&#39;princesa&#39;, 0.8279282450675964)]</pre>
 </div>
 
 </div>
@@ -13873,7 +13842,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">nearest_similarity_cosmul</span><span class="p">(</span><span class="n">start1</span><span class="p">,</span> <span class="n">end1</span><span class="p">,</span> <span class="n">end2</span><span class="p">):</span>
@@ -13892,7 +13861,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nearest_similarity_cosmul</span><span class="p">(</span><span class="s2">&quot;amor&quot;</span><span class="p">,</span> <span class="s2">&quot;novio&quot;</span><span class="p">,</span> <span class="s2">&quot;amigo&quot;</span><span class="p">)</span>
@@ -13912,38 +13881,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>amor es a novio, lo que sentimiento es a amigo
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nearest_similarity_cosmul</span><span class="p">(</span><span class="s2">&quot;madrid&quot;</span><span class="p">,</span> <span class="s2">&quot;españa&quot;</span><span class="p">,</span> <span class="s2">&quot;francia&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>madrid es a españa, lo que mayo es a francia
+<pre>amor es a novio, lo que odio es a amigo
 </pre>
 </div>
 </div>
@@ -13964,7 +13902,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;madrid&quot;</span><span class="p">,</span><span class="s2">&quot;madrid&quot;</span><span class="p">)</span>
@@ -13980,7 +13918,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -13997,7 +13935,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;sucio&quot;</span><span class="p">,</span><span class="s2">&quot;limpio&quot;</span><span class="p">)</span>
@@ -14013,13 +13951,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[40]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.8671822</pre>
+<pre>0.8794473</pre>
 </div>
 
 </div>
@@ -14030,7 +13968,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;rey&quot;</span><span class="p">,</span><span class="s2">&quot;mujer&quot;</span><span class="p">)</span>
@@ -14046,13 +13984,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.5675919</pre>
+<pre>0.59126824</pre>
 </div>
 
 </div>
@@ -14073,7 +14011,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Seed for the RNG, to make the results reproducible.</span>
@@ -14122,7 +14060,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">text_corpus</span><span class="p">)</span>
@@ -14138,7 +14076,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -14155,7 +14093,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
@@ -14185,7 +14123,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>--- 116.17954206466675 seconds ---
+<pre>--- 111.70185971260071 seconds ---
 </pre>
 </div>
 </div>
@@ -14196,7 +14134,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span> <span class="o">=</span> <span class="n">w2v</span><span class="o">.</span><span class="n">Word2Vec</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;trained&quot;</span><span class="p">,</span> <span class="s2">&quot;songs2vectors.w2v&quot;</span><span class="p">))</span>
@@ -14234,7 +14172,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;cariño&quot;</span><span class="p">)</span>
@@ -14250,22 +14188,22 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;amor&#39;, 0.7747402787208557),
- (&#39;entregándote&#39;, 0.7508940696716309),
- (&#39;apoyo&#39;, 0.7392458915710449),
- (&#39;incondicional&#39;, 0.736456573009491),
- (&#39;dándote&#39;, 0.7203603386878967),
- (&#39;recibido&#39;, 0.7189944982528687),
- (&#39;vendía&#39;, 0.7181857824325562),
- (&#39;armarme&#39;, 0.7177162170410156),
- (&#39;hablé&#39;, 0.7164954543113708),
- (&#39;abrazarme&#39;, 0.7159055471420288)]</pre>
+<pre>[(&#39;entregándote&#39;, 0.7388963103294373),
+ (&#39;amor&#39;, 0.7369283437728882),
+ (&#39;amaamate&#39;, 0.694383978843689),
+ (&#39;muxo&#39;, 0.6815909147262573),
+ (&#39;fónicos&#39;, 0.673570990562439),
+ (&#39;calor&#39;, 0.6714609861373901),
+ (&#39;aliño&#39;, 0.6656036376953125),
+ (&#39;kerias&#39;, 0.6648221611976624),
+ (&#39;caricias&#39;, 0.6595408916473389),
+ (&#39;tantito&#39;, 0.6568362712860107)]</pre>
 </div>
 
 </div>
@@ -14276,7 +14214,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;hermosa&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -14292,17 +14230,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[49]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;bella&#39;, 0.8710116147994995),
- (&#39;preciosa&#39;, 0.8460835218429565),
- (&#39;bonita&#39;, 0.8373374342918396),
- (&#39;confusa&#39;, 0.8340834379196167),
- (&#39;linda&#39;, 0.8337316513061523)]</pre>
+<pre>[(&#39;bonita&#39;, 0.7624498605728149),
+ (&#39;bella&#39;, 0.7601706981658936),
+ (&#39;preciosa&#39;, 0.73923659324646),
+ (&#39;compleja&#39;, 0.7180707454681396),
+ (&#39;dolorosa&#39;, 0.7177384495735168)]</pre>
 </div>
 
 </div>
@@ -14313,7 +14251,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;chica&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -14329,17 +14267,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[50]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;niña&#39;, 0.7849768400192261),
- (&#39;linda&#39;, 0.7815207242965698),
- (&#39;coqueta&#39;, 0.7766475081443787),
- (&#39;pava&#39;, 0.7740352153778076),
- (&#39;mamada&#39;, 0.7695134878158569)]</pre>
+<pre>[(&#39;niña&#39;, 0.7462828159332275),
+ (&#39;quinceañera&#39;, 0.7226129770278931),
+ (&#39;linda&#39;, 0.720695972442627),
+ (&#39;rubia&#39;, 0.7192088961601257),
+ (&#39;deseada&#39;, 0.7170925736427307)]</pre>
 </div>
 
 </div>
@@ -14350,7 +14288,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;chico&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -14366,17 +14304,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[51]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;timido&#39;, 0.7640064358711243),
- (&#39;güey&#39;, 0.7479305267333984),
- (&#39;insensato&#39;, 0.7474128007888794),
- (&#39;canijo&#39;, 0.7446750402450562),
- (&#39;chaval&#39;, 0.7398381233215332)]</pre>
+<pre>[(&#39;timido&#39;, 0.7327998876571655),
+ (&#39;educao&#39;, 0.7183321118354797),
+ (&#39;inmaduro&#39;, 0.7061591148376465),
+ (&#39;pri&#39;, 0.698125958442688),
+ (&#39;güey&#39;, 0.6961464881896973)]</pre>
 </div>
 
 </div>
@@ -14387,7 +14325,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;café&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -14403,17 +14341,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[52]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;tostadas&#39;, 0.8229846954345703),
- (&#39;resaca&#39;, 0.7726624608039856),
- (&#39;porro&#39;, 0.7692351341247559),
- (&#39;brugal&#39;, 0.7602365016937256),
- (&#39;limón&#39;, 0.7566088438034058)]</pre>
+<pre>[(&#39;tostadas&#39;, 0.7152862548828125),
+ (&#39;colacao&#39;, 0.6824556589126587),
+ (&#39;canuto&#39;, 0.6773313283920288),
+ (&#39;porrón&#39;, 0.6751648187637329),
+ (&#39;ritz&#39;, 0.6689889430999756)]</pre>
 </div>
 
 </div>
@@ -14424,7 +14362,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;negro&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -14440,17 +14378,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[53]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;blanco&#39;, 0.7818493843078613),
- (&#39;pinte&#39;, 0.7683273553848267),
- (&#39;verde&#39;, 0.7678519487380981),
- (&#39;amarillo&#39;, 0.7448462247848511),
- (&#39;marrón&#39;, 0.7443979978561401)]</pre>
+<pre>[(&#39;blanco&#39;, 0.8318845629692078),
+ (&#39;pinte&#39;, 0.7849599719047546),
+ (&#39;verde&#39;, 0.7335950136184692),
+ (&#39;ocre&#39;, 0.7184582948684692),
+ (&#39;azul&#39;, 0.679088830947876)]</pre>
 </div>
 
 </div>
@@ -14469,7 +14407,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">doesnt_match</span><span class="p">(</span><span class="s2">&quot;amor cariño dulce pasión&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
@@ -14497,7 +14435,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -14514,7 +14452,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">doesnt_match</span><span class="p">(</span><span class="s2">&quot;desayuno almuerzo merienda fruta&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
@@ -14530,13 +14468,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;desayuno&#39;</pre>
+<pre>&#39;fruta&#39;</pre>
 </div>
 
 </div>
@@ -14547,7 +14485,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="n">positive</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;mujer&#39;</span><span class="p">,</span> <span class="s1">&#39;bonita&#39;</span><span class="p">],</span> <span class="n">negative</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;fea&#39;</span><span class="p">],</span> <span class="n">topn</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -14563,17 +14501,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;niña&#39;, 0.7262407541275024),
- (&#39;linda&#39;, 0.6723403930664062),
- (&#39;preciosa&#39;, 0.664448082447052),
- (&#39;diosa&#39;, 0.6637368202209473),
- (&#39;hada&#39;, 0.6559160947799683)]</pre>
+<pre>[(&#39;niña&#39;, 0.6639023423194885),
+ (&#39;diosa&#39;, 0.6161247491836548),
+ (&#39;linda&#39;, 0.6025633811950684),
+ (&#39;vp&#39;, 0.5874355435371399),
+ (&#39;kutxi&#39;, 0.5869916081428528)]</pre>
 </div>
 
 </div>
@@ -14602,7 +14540,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">nearest_similarity_cosmul</span><span class="p">(</span><span class="n">start1</span><span class="p">,</span> <span class="n">end1</span><span class="p">,</span> <span class="n">end2</span><span class="p">):</span>
@@ -14621,7 +14559,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nearest_similarity_cosmul</span><span class="p">(</span><span class="s2">&quot;amor&quot;</span><span class="p">,</span> <span class="s2">&quot;novio&quot;</span><span class="p">,</span> <span class="s2">&quot;amigo&quot;</span><span class="p">)</span>
@@ -14641,7 +14579,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>amor es a novio, lo que platónico es a amigo
+<pre>amor es a novio, lo que honor es a amigo
 </pre>
 </div>
 </div>
@@ -14652,7 +14590,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nearest_similarity_cosmul</span><span class="p">(</span><span class="s2">&quot;marrón&quot;</span><span class="p">,</span> <span class="s2">&quot;pera&quot;</span><span class="p">,</span> <span class="s2">&quot;manzana&quot;</span><span class="p">)</span>
@@ -14693,7 +14631,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;francia&quot;</span><span class="p">,</span><span class="s2">&quot;francia&quot;</span><span class="p">)</span>
@@ -14709,7 +14647,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[60]:</div>
 
 
 
@@ -14726,7 +14664,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;sucio&quot;</span><span class="p">,</span><span class="s2">&quot;limpio&quot;</span><span class="p">)</span>
@@ -14742,13 +14680,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[44]:</div>
+    <div class="prompt output_prompt">Out[61]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.6333254</pre>
+<pre>0.5456666</pre>
 </div>
 
 </div>
@@ -14759,7 +14697,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;rey&quot;</span><span class="p">,</span><span class="s2">&quot;mujer&quot;</span><span class="p">)</span>
@@ -14775,13 +14713,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[45]:</div>
+    <div class="prompt output_prompt">Out[62]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.3692851</pre>
+<pre>0.3328245</pre>
 </div>
 
 </div>
@@ -14792,7 +14730,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;chocolate&quot;</span><span class="p">,</span><span class="s2">&quot;tableta&quot;</span><span class="p">)</span>
@@ -14808,13 +14746,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt output_prompt">Out[63]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.7274871</pre>
+<pre>0.6578431</pre>
 </div>
 
 </div>
@@ -14835,7 +14773,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Quijote.txt&quot;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -14852,7 +14790,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[47]:</div>
+    <div class="prompt output_prompt">Out[64]:</div>
 
 
 
@@ -14944,10 +14882,10 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14960,7 +14898,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[48]:</div>
+    <div class="prompt output_prompt">Out[66]:</div>
 
 
 
@@ -14988,30 +14926,6 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
   </thead>
   <tbody>
     <tr>
-      <th>31628</th>
-      <td>Fin</td>
-    </tr>
-    <tr>
-      <th>31629</th>
-      <td>End of Project Gutenberg's Don Quijote, by Mig...</td>
-    </tr>
-    <tr>
-      <th>31630</th>
-      <td>*** END OF THIS PROJECT GUTENBERG EBOOK DON QU...</td>
-    </tr>
-    <tr>
-      <th>31631</th>
-      <td>***** This file should be named 2000-8.txt or ...</td>
-    </tr>
-    <tr>
-      <th>31632</th>
-      <td>This and all associated files of various forma...</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-    </tr>
-    <tr>
       <th>31923</th>
       <td>http://www.gutenberg.net</td>
     </tr>
@@ -15033,7 +14947,6 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
     </tr>
   </tbody>
 </table>
-<p>300 rows × 1 columns</p>
 </div>
 </div>
 
@@ -15045,11 +14958,23 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">31629</span><span class="p">]</span>
-<span class="n">data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15062,7 +14987,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[49]:</div>
+    <div class="prompt output_prompt">Out[68]:</div>
 
 
 
@@ -15109,10 +15034,62 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
       <th>16</th>
       <td>los señores dél un libro intitulado El ingenio...</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[69]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>The Project Gutenberg EBook of Don Quijote, by Miguel de Cervantes Saavedra</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <th>31624</th>
       <td>sus escritos enteramente, como deseaba, pues n...</td>
@@ -15135,7 +15112,6 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
     </tr>
   </tbody>
 </table>
-<p>31617 rows × 1 columns</p>
 </div>
 </div>
 
@@ -15155,7 +15131,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -15169,7 +15145,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span>
@@ -15185,7 +15161,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[51]:</div>
+    <div class="prompt output_prompt">Out[71]:</div>
 
 
 
@@ -15202,7 +15178,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;The Project Gutenberg EBook of Don Quijote, by Miguel de Cervantes Saavedra&#39;</span><span class="p">]</span>
@@ -15215,7 +15191,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_corpus2</span> <span class="o">=</span> <span class="p">[]</span>
@@ -15240,244 +15216,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_corpus2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[54]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;avestruz&#39;,
- &#39;grosera&#39;,
- &#39;y&#39;,
- &#39;mal&#39;,
- &#39;deliñada&#39;,
- &#39;las&#39;,
- &#39;hazañas&#39;,
- &#39;de&#39;,
- &#39;mi&#39;,
- &#39;valeroso&#39;,
- &#39;caballero&#39;,
- &#39;porque&#39;,
- &#39;no&#39;,
- &#39;es&#39;,
- &#39;carga&#39;,
- &#39;de&#39;,
- &#39;sus&#39;,
- &#39;hombros&#39;,
- &#39;ni&#39;,
- &#39;asunto&#39;,
- &#39;de&#39;,
- &#39;su&#39;,
- &#39;resfriado&#39;,
- &#39;ingenio&#39;,
- &#39;a&#39;,
- &#39;quien&#39;,
- &#39;advertirás&#39;,
- &#39;si&#39;,
- &#39;acaso&#39;,
- &#39;llegas&#39;,
- &#39;a&#39;,
- &#39;conocerle&#39;,
- &#39;que&#39;,
- &#39;deje&#39;,
- &#39;reposar&#39;,
- &#39;en&#39;,
- &#39;la&#39;,
- &#39;sepultura&#39;,
- &#39;los&#39;,
- &#39;cansados&#39;,
- &#39;y&#39;,
- &#39;ya&#39;,
- &#39;podridos&#39;,
- &#39;huesos&#39;,
- &#39;de&#39;,
- &#39;don&#39;,
- &#39;quijote&#39;,
- &#39;y&#39;,
- &#39;no&#39;,
- &#39;le&#39;,
- &#39;quiera&#39;,
- &#39;llevar&#39;,
- &#39;contra&#39;,
- &#39;todos&#39;,
- &#39;los&#39;,
- &#39;fueros&#39;,
- &#39;de&#39;,
- &#39;la&#39;,
- &#39;muerte&#39;,
- &#39;a&#39;,
- &#39;castilla&#39;,
- &#39;la&#39;,
- &#39;vieja&#39;,
- &#39;haciéndole&#39;,
- &#39;salir&#39;,
- &#39;de&#39;,
- &#39;la&#39;,
- &#39;fuesa&#39;,
- &#39;donde&#39;,
- &#39;real&#39;,
- &#39;y&#39;,
- &#39;verdaderamente&#39;,
- &#39;yace&#39;,
- &#39;tendido&#39;,
- &#39;de&#39;,
- &#39;largo&#39;,
- &#39;a&#39;,
- &#39;largo&#39;,
- &#39;imposibilitado&#39;,
- &#39;de&#39;,
- &#39;hacer&#39;,
- &#39;tercera&#39;,
- &#39;jornada&#39;,
- &#39;y&#39;,
- &#39;salida&#39;,
- &#39;nueva&#39;,
- &#39;que&#39;,
- &#39;para&#39;,
- &#39;hacer&#39;,
- &#39;burla&#39;,
- &#39;de&#39;,
- &#39;tantas&#39;,
- &#39;como&#39;,
- &#39;hicieron&#39;,
- &#39;tantos&#39;,
- &#39;andantes&#39;,
- &#39;caballeros&#39;,
- &#39;bastan&#39;,
- &#39;las&#39;,
- &#39;dos&#39;,
- &#39;que&#39;,
- &#39;él&#39;,
- &#39;hizo&#39;,
- &#39;tan&#39;,
- &#39;a&#39;,
- &#39;gusto&#39;,
- &#39;y&#39;,
- &#39;beneplácito&#39;,
- &#39;de&#39;,
- &#39;las&#39;,
- &#39;gentes&#39;,
- &#39;a&#39;,
- &#39;cuya&#39;,
- &#39;noticia&#39;,
- &#39;llegaron&#39;,
- &#39;así&#39;,
- &#39;en&#39;,
- &#39;éstos&#39;,
- &#39;como&#39;,
- &#39;en&#39;,
- &#39;los&#39;,
- &#39;estraños&#39;,
- &#39;reinos&#39;,
- &#39;y&#39;,
- &#39;con&#39;,
- &#39;esto&#39;,
- &#39;cumplirás&#39;,
- &#39;con&#39;,
- &#39;tu&#39;,
- &#39;cristiana&#39;,
- &#39;profesión&#39;,
- &#39;aconsejando&#39;,
- &#39;bien&#39;,
- &#39;a&#39;,
- &#39;quien&#39;,
- &#39;mal&#39;,
- &#39;te&#39;,
- &#39;quiere&#39;,
- &#39;y&#39;,
- &#39;yo&#39;,
- &#39;quedaré&#39;,
- &#39;satisfecho&#39;,
- &#39;y&#39;,
- &#39;ufano&#39;,
- &#39;de&#39;,
- &#39;haber&#39;,
- &#39;sido&#39;,
- &#39;el&#39;,
- &#39;primero&#39;,
- &#39;que&#39;,
- &#39;gozó&#39;,
- &#39;el&#39;,
- &#39;fruto&#39;,
- &#39;de&#39;,
- &#39;sus&#39;,
- &#39;escritos&#39;,
- &#39;enteramente&#39;,
- &#39;como&#39;,
- &#39;deseaba&#39;,
- &#39;pues&#39;,
- &#39;no&#39;,
- &#39;ha&#39;,
- &#39;sido&#39;,
- &#39;otro&#39;,
- &#39;mi&#39;,
- &#39;deseo&#39;,
- &#39;que&#39;,
- &#39;poner&#39;,
- &#39;en&#39;,
- &#39;aborrecimiento&#39;,
- &#39;de&#39;,
- &#39;los&#39;,
- &#39;hombres&#39;,
- &#39;las&#39;,
- &#39;fingidas&#39;,
- &#39;y&#39;,
- &#39;disparatadas&#39;,
- &#39;historias&#39;,
- &#39;de&#39;,
- &#39;los&#39;,
- &#39;libros&#39;,
- &#39;de&#39;,
- &#39;caballerías&#39;,
- &#39;que&#39;,
- &#39;por&#39;,
- &#39;las&#39;,
- &#39;de&#39;,
- &#39;mi&#39;,
- &#39;verdadero&#39;,
- &#39;don&#39;,
- &#39;quijote&#39;,
- &#39;van&#39;,
- &#39;ya&#39;,
- &#39;tropezando&#39;,
- &#39;y&#39;,
- &#39;han&#39;,
- &#39;de&#39;,
- &#39;caer&#39;,
- &#39;del&#39;,
- &#39;todo&#39;,
- &#39;sin&#39;,
- &#39;duda&#39;,
- &#39;alguna&#39;,
- &#39;vale&#39;,
- &#39;fin&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Minimum word count threshold.</span>
@@ -15500,7 +15239,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">text_corpus2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -15541,7 +15280,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Seed for the RNG, to make the results reproducible.</span>
@@ -15590,7 +15329,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">text_corpus2</span><span class="p">)</span>
@@ -15606,7 +15345,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[77]:</div>
 
 
 
@@ -15623,7 +15362,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
@@ -15653,7 +15392,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>--- 7.313740968704224 seconds ---
+<pre>--- 11.051573038101196 seconds ---
 </pre>
 </div>
 </div>
@@ -15664,7 +15403,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span> <span class="o">=</span> <span class="n">w2v</span><span class="o">.</span><span class="n">Word2Vec</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;trained&quot;</span><span class="p">,</span> <span class="s2">&quot;text2vectors.w2v&quot;</span><span class="p">))</span>
@@ -15692,7 +15431,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;mujer&quot;</span><span class="p">)</span>
@@ -15708,22 +15447,22 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[61]:</div>
+    <div class="prompt output_prompt">Out[80]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;teresa&#39;, 0.8839719295501709),
- (&#39;honrada&#39;, 0.8825970888137817),
- (&#39;marido&#39;, 0.8639012575149536),
- (&#39;hija&#39;, 0.8516649007797241),
- (&#39;desdichada&#39;, 0.8450090885162354),
- (&#39;honesta&#39;, 0.8443101644515991),
- (&#39;madre&#39;, 0.8429644107818604),
- (&#39;amiga&#39;, 0.8333353400230408),
- (&#39;fermosa&#39;, 0.8320869207382202),
- (&#39;moza&#39;, 0.8307796716690063)]</pre>
+<pre>[(&#39;honrada&#39;, 0.8938508629798889),
+ (&#39;hija&#39;, 0.8720011711120605),
+ (&#39;honesta&#39;, 0.8675751686096191),
+ (&#39;marido&#39;, 0.8655372858047485),
+ (&#39;teresa&#39;, 0.8527683615684509),
+ (&#39;esposa&#39;, 0.8488396406173706),
+ (&#39;madre&#39;, 0.8473662734031677),
+ (&#39;libre&#39;, 0.8364934921264648),
+ (&#39;desdichada&#39;, 0.8344928622245789),
+ (&#39;honra&#39;, 0.831421971321106)]</pre>
 </div>
 
 </div>
@@ -15734,7 +15473,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;hombre&quot;</span><span class="p">)</span>
@@ -15750,22 +15489,22 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[62]:</div>
+    <div class="prompt output_prompt">Out[81]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;loco&#39;, 0.9118865132331848),
- (&#39;viejo&#39;, 0.9113806486129761),
- (&#39;cristiano&#39;, 0.9065518379211426),
- (&#39;honrado&#39;, 0.906287431716919),
- (&#39;cuerdo&#39;, 0.900425374507904),
- (&#39;hermoso&#39;, 0.8977699279785156),
- (&#39;suyo&#39;, 0.8936746120452881),
- (&#39;mancebo&#39;, 0.8908954858779907),
- (&#39;bueno&#39;, 0.8846601843833923),
- (&#39;gracioso&#39;, 0.8817698955535889)]</pre>
+<pre>[(&#39;viejo&#39;, 0.9042916893959045),
+ (&#39;loco&#39;, 0.902175784111023),
+ (&#39;suyo&#39;, 0.8912755250930786),
+ (&#39;honrado&#39;, 0.8897941708564758),
+ (&#39;mancebo&#39;, 0.8771772384643555),
+ (&#39;cristiano&#39;, 0.8766229152679443),
+ (&#39;cuerdo&#39;, 0.8734073042869568),
+ (&#39;largo&#39;, 0.8664575815200806),
+ (&#39;hermoso&#39;, 0.865921139717102),
+ (&#39;estudiante&#39;, 0.8638143539428711)]</pre>
 </div>
 
 </div>
@@ -15776,7 +15515,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;negro&quot;</span><span class="p">)</span>
@@ -15792,22 +15531,22 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[82]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;pardo&#39;, 0.9218100905418396),
- (&#39;vestido&#39;, 0.9182323813438416),
- (&#39;vestida&#39;, 0.9066106081008911),
- (&#39;pedazo&#39;, 0.9058835506439209),
- (&#39;ancho&#39;, 0.9001396298408508),
- (&#39;blanco&#39;, 0.8985384702682495),
- (&#39;cubierto&#39;, 0.8975080847740173),
- (&#39;venerable&#39;, 0.8956212997436523),
- (&#39;tafetán&#39;, 0.8945750594139099),
- (&#39;negra&#39;, 0.8945091962814331)]</pre>
+<pre>[(&#39;vestido&#39;, 0.926448404788971),
+ (&#39;pardo&#39;, 0.9219568967819214),
+ (&#39;vestida&#39;, 0.9146950244903564),
+ (&#39;pedazo&#39;, 0.9130196571350098),
+ (&#39;venerable&#39;, 0.9058477878570557),
+ (&#39;prado&#39;, 0.9057432413101196),
+ (&#39;lienzo&#39;, 0.9031692743301392),
+ (&#39;cuero&#39;, 0.9000747203826904),
+ (&#39;tronco&#39;, 0.9000219106674194),
+ (&#39;negra&#39;, 0.8981950283050537)]</pre>
 </div>
 
 </div>
@@ -15818,7 +15557,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;quijote&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -15834,17 +15573,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[64]:</div>
+    <div class="prompt output_prompt">Out[83]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;don&#39;, 0.7868304252624512),
- (&#39;antonio&#39;, 0.7508953213691711),
- (&#39;dolorida&#39;, 0.7470324039459229),
- (&#39;ah&#39;, 0.7289961576461792),
- (&#39;roque&#39;, 0.726884126663208)]</pre>
+<pre>[(&#39;don&#39;, 0.7574098110198975),
+ (&#39;ah&#39;, 0.745415985584259),
+ (&#39;roque&#39;, 0.73903489112854),
+ (&#39;ventero&#39;, 0.7380886673927307),
+ (&#39;maese&#39;, 0.7365491986274719)]</pre>
 </div>
 
 </div>
@@ -15873,7 +15612,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="n">positive</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;caballero&#39;</span><span class="p">,</span> <span class="s1">&#39;bueno&#39;</span><span class="p">],</span> <span class="n">topn</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -15889,17 +15628,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[65]:</div>
+    <div class="prompt output_prompt">Out[84]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;innecesario&#39;, 0.8746901154518127),
- (&#39;albañil&#39;, 0.8692128658294678),
- (&#39;simpático&#39;, 0.8628860712051392),
- (&#39;obediente&#39;, 0.8616823554039001),
- (&#39;insensato&#39;, 0.8603994846343994)]</pre>
+<pre>[(&#39;exitazo&#39;, 0.7861075401306152),
+ (&#39;sónico&#39;, 0.7857464551925659),
+ (&#39;cabezón&#39;, 0.7843095660209656),
+ (&#39;lamí&#39;, 0.7805916666984558),
+ (&#39;timido&#39;, 0.7802799940109253)]</pre>
 </div>
 
 </div>
@@ -15918,7 +15657,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="n">positive</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;caballero&#39;</span><span class="p">,</span> <span class="s1">&#39;bueno&#39;</span><span class="p">],</span> <span class="n">topn</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -15934,17 +15673,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[66]:</div>
+    <div class="prompt output_prompt">Out[85]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;honrado&#39;, 0.9390527009963989),
- (&#39;verdadero&#39;, 0.9282504320144653),
- (&#39;moro&#39;, 0.9194221496582031),
- (&#39;atrevido&#39;, 0.9161350727081299),
- (&#39;desdichado&#39;, 0.9131878614425659)]</pre>
+<pre>[(&#39;atrevido&#39;, 0.9289736747741699),
+ (&#39;honrado&#39;, 0.9280370473861694),
+ (&#39;villano&#39;, 0.9249980449676514),
+ (&#39;verdadero&#39;, 0.9247971773147583),
+ (&#39;aventurero&#39;, 0.9206607341766357)]</pre>
 </div>
 
 </div>
@@ -15963,7 +15702,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">nearest_similarity_cosmul</span><span class="p">(</span><span class="n">start1</span><span class="p">,</span> <span class="n">end1</span><span class="p">,</span> <span class="n">end2</span><span class="p">):</span>
@@ -15992,7 +15731,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nearest_similarity_cosmul</span><span class="p">(</span><span class="s2">&quot;amor&quot;</span><span class="p">,</span> <span class="s2">&quot;pareja&quot;</span><span class="p">,</span> <span class="s2">&quot;amigo&quot;</span><span class="p">)</span>
@@ -16012,7 +15751,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>amor es a pareja, lo que compadre es a amigo
+<pre>amor es a pareja, lo que hijo es a amigo
 </pre>
 </div>
 </div>
@@ -16023,7 +15762,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nearest_similarity_cosmul</span><span class="p">(</span><span class="s2">&quot;dulcinea&quot;</span><span class="p">,</span> <span class="s2">&quot;quijote&quot;</span><span class="p">,</span> <span class="s2">&quot;sancho&quot;</span><span class="p">)</span>
@@ -16064,10 +15803,10 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;postre&quot;</span><span class="p">,</span><span class="s2">&quot;dulce&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;postre&quot;</span><span class="p">,</span><span class="s2">&quot;dulce&quot;</span><span class="p">)</span> <span class="c1">#Canciones</span>
 </pre></div>
 
     </div>
@@ -16080,13 +15819,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[70]:</div>
+    <div class="prompt output_prompt">Out[89]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.5460919</pre>
+<pre>0.47373804</pre>
 </div>
 
 </div>
@@ -16097,10 +15836,10 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;postre&quot;</span><span class="p">,</span><span class="s2">&quot;dulce&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="s2">&quot;postre&quot;</span><span class="p">,</span><span class="s2">&quot;dulce&quot;</span><span class="p">)</span> <span class="c1">#Quijote</span>
 </pre></div>
 
     </div>
@@ -16113,13 +15852,13 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[71]:</div>
+    <div class="prompt output_prompt">Out[90]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.91269493</pre>
+<pre>0.9121996</pre>
 </div>
 
 </div>
@@ -16140,7 +15879,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;comer&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -16156,17 +15895,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[72]:</div>
+    <div class="prompt output_prompt">Out[91]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;beber&#39;, 0.9147180318832397),
- (&#39;echar&#39;, 0.9109498858451843),
- (&#39;palos&#39;, 0.9074153304100037),
- (&#39;querer&#39;, 0.9066405296325684),
- (&#39;rogar&#39;, 0.906343936920166)]</pre>
+<pre>[(&#39;mover&#39;, 0.9129087328910828),
+ (&#39;beber&#39;, 0.9128284454345703),
+ (&#39;propósito&#39;, 0.9063863754272461),
+ (&#39;salir&#39;, 0.9034106135368347),
+ (&#39;decirle&#39;, 0.9029937386512756)]</pre>
 </div>
 
 </div>
@@ -16187,7 +15926,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="s2">&quot;comer&quot;</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
@@ -16203,17 +15942,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[73]:</div>
+    <div class="prompt output_prompt">Out[92]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;currar&#39;, 0.8019644021987915),
- (&#39;mojar&#39;, 0.7858310341835022),
- (&#39;madrugar&#39;, 0.7701884508132935),
- (&#39;mandarte&#39;, 0.7686958312988281),
- (&#39;almorzar&#39;, 0.7607324123382568)]</pre>
+<pre>[(&#39;almorzar&#39;, 0.7461827993392944),
+ (&#39;mandarte&#39;, 0.7202051281929016),
+ (&#39;pagarle&#39;, 0.7158961892127991),
+ (&#39;drogar&#39;, 0.7144160270690918),
+ (&#39;esnifar&#39;, 0.7074589729309082)]</pre>
 </div>
 
 </div>
@@ -16232,7 +15971,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">doesnt_match</span><span class="p">(</span><span class="s2">&quot;amor cariño dulce pasión&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
@@ -16260,7 +15999,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[74]:</div>
+    <div class="prompt output_prompt">Out[93]:</div>
 
 
 
@@ -16277,7 +16016,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">doesnt_match</span><span class="p">(</span><span class="s2">&quot;desayuno almuerzo merienda fruta&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
@@ -16293,7 +16032,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[75]:</div>
+    <div class="prompt output_prompt">Out[94]:</div>
 
 
 
@@ -16310,7 +16049,7 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text2vec</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">most_similar</span><span class="p">(</span><span class="n">positive</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;hermosa&#39;</span><span class="p">,</span> <span class="s1">&#39;mujer&#39;</span><span class="p">],</span> <span class="n">negative</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;hombre&#39;</span><span class="p">],</span> <span class="n">topn</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -16326,17 +16065,17 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[76]:</div>
+    <div class="prompt output_prompt">Out[95]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;madre&#39;, 0.7637604475021362),
- (&#39;hermosura&#39;, 0.7563770413398743),
- (&#39;doncella&#39;, 0.7481054067611694),
- (&#39;mía&#39;, 0.7468769550323486),
- (&#39;santa&#39;, 0.746087908744812)]</pre>
+<pre>[(&#39;hermosura&#39;, 0.7912766933441162),
+ (&#39;madre&#39;, 0.766627848148346),
+ (&#39;honrada&#39;, 0.7550145387649536),
+ (&#39;mesma&#39;, 0.7468474507331848),
+ (&#39;mía&#39;, 0.7448136806488037)]</pre>
 </div>
 
 </div>
@@ -16454,50 +16193,6 @@ Además, eliminamos la palabra estribillo y x2 ya que no son propias de la letra
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs</span><span class="p">[</span><span class="s1">&#39;letra&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[191]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0       Para su nuevo disco &#34;Medicina&#34;, Denom ha vuelt...
-1       [Denom]\nYo que quería, yo que pedía vida,\nSe...
-2       &#34;El orgullo es fiel&#34; es uno de los cortes incl...
-3       [Estribillo: Denom] (x2)\nMueve, mueve, mueve,...
-4       [Estribillo]\nY en esta noche, ¿Quién me arrop...
-                              ...                        
-9320    Cuestiones de fianzas, tras de más desconfianz...
-9321    Quiero decirte tantas cosas que no pude,\nasum...
-9322    [Porta]\nTenemos que hablar, esto tiene que ca...
-9323    [Estribillo]\n(En inglés)\n\n\nNunca llegarás ...
-9324    Soy yo, hello, soy el Arbel López,\nnegrata es...
-Name: letra, Length: 9325, dtype: object</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -54539,970 +54234,6 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">artista</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[101]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;Toteking&#39;,
- &#39;S. Natas&#39;,
- &#39;Kultama&#39;,
- &#39;Joshu&#39;,
- &#39;PutoLargo y Legendario&#39;,
- &#39;Suite Soprano&#39;,
- &#39;Joey Bada$$&#39;,
- &#39;Shotta&#39;,
- &#39;Shotta&#39;,
- &#39;Kinky bwoy&#39;,
- &#39;Piter&#39;,
- &#39;Daddy maza&#39;,
- &#39;Shotta&#39;,
- &#39;Chystemc&#39;,
- &#39;Lírico&#39;,
- &#39;Aerolineas Subterraneas&#39;,
- &#39;Grand Groove&#39;,
- &#39;Fresty&#39;,
- &#39;Rebeliom do inframundo&#39;,
- &#39;Triple XXX&#39;,
- &#39;Kako y Norver Producciones&#39;,
- &#39;Denom&#39;,
- &#39;Sumakk&#39;,
- &#39;Humanu&#39;,
- &#39;Duo Kie&#39;,
- &#39;Jerry Coke y Barry Bianco&#39;,
- &#39;Foyone&#39;,
- &#39;Abram&#39;,
- &#39;Black Bee&#39;,
- &#39;Gordo Master&#39;,
- &#39;SFDK&#39;,
- &#39;Violadores del verso&#39;,
- &#39;Iván Nieto&#39;,
- &#39;Bombony Montana y Lone&#39;,
- &#39;Mersus&#39;,
- &#39;Toteking&#39;,
- &#39;C. Tangana&#39;,
- &#39;Suko&#39;,
- &#39;El Momo&#39;,
- &#39;Lèolo&#39;,
- &#39;El Bezea&#39;,
- &#39;Riddle&#39;,
- &#39;Dj Rune y Trafik&#39;,
- &#39;Foyone&#39;,
- &#39;El Chojin&#39;,
- &#39;Seven&#39;,
- &#39;Imad Moreno&#39;,
- &#39;Samurai&#39;,
- &#39;Baino di lion y Toteking&#39;,
- &#39;Soge Culebra&#39;,
- &#39;Conor&#39;,
- &#39;Recycled J&#39;,
- &#39;Niko&#39;,
- &#39;La hawha band&#39;,
- &#39;Evan VP&#39;,
- &#39;Dano y Skyhook&#39;,
- &#39;Boti&#39;,
- &#39;Syla&#39;,
- &#39;Zarcort&#39;,
- &#39;Shuga Wuga&#39;,
- &#39;Iván Nieto&#39;,
- &#39;SFDK&#39;,
- &#39;El Puto Coke presenta&#39;,
- &#39;Nach&#39;,
- &#39;Yoque&#39;,
- &#39;Zodia&#39;,
- &#39;Aloy&#39;,
- &#39;Rayden&#39;,
- &#39;Elgio&#39;,
- &#39;Nach&#39;,
- &#39;Ayax&#39;,
- &#39;Kidd Keo&#39;,
- &#39;Sondkalle&#39;,
- &#39;Frescolate&#39;,
- &#39;Sancho y Santhsone&#39;,
- &#39;Doble R.&#39;,
- &#39;Khan&#39;,
- &#39;Rees&#39;,
- &#39;Zaratu&#39;,
- &#39;Green Valley&#39;,
- &#39;El Chojin&#39;,
- &#39;Del valle&#39;,
- &#39;SFDK&#39;,
- &#39;El Puto Coke presenta&#39;,
- &#39;Aloy&#39;,
- &#39;DuX&#39;,
- &#39;Gerson J&#39;,
- &#39;C. Tangana&#39;,
- &#39;Jefe de la M&#39;,
- &#39;Swan Fyahbwoy&#39;,
- &#39;Suite Soprano&#39;,
- &#39;Alex Orellana y Jayder&#39;,
- &#39;Sharif&#39;,
- &#39;Charly Efe y Loren D&#39;,
- &#39;Jesuly&#39;,
- &#39;El Momo&#39;,
- &#39;Quilate&#39;,
- &#39;Los chikos del maíz&#39;,
- &#39;Univity y Rayden&#39;,
- &#39;El Chaval&#39;,
- &#39;Iván Nieto&#39;,
- &#39;Jefe de la M&#39;,
- &#39;Los chikos del maíz&#39;,
- &#39;PutoLargo&#39;,
- &#39;Recycled J&#39;,
- &#39;Ras soldier&#39;,
- &#39;Jah Bantu&#39;,
- &#39;ZPU&#39;,
- &#39;Fernando Álvarez&#39;,
- &#39;Kontagio&#39;,
- &#39;SFDK&#39;,
- &#39;Cheb Rubën&#39;,
- &#39;Rapsoda&#39;,
- &#39;Dani Ro&#39;,
- &#39;AJ&#39;,
- &#39;Sawnakasick&#39;,
- &#39;Porta&#39;,
- &#39;Jaloner y Dj Force&#39;,
- &#39;El Santo y Tosko&#39;,
- &#39;El Santo y Tosko&#39;,
- &#39;Piter&#39;,
- &#39;Juancho Marqués&#39;,
- &#39;Eneyser&#39;,
- &#39;Maka&#39;,
- &#39;Juancho Marqués&#39;,
- &#39;Toteking&#39;,
- &#39;Aniki&#39;,
- &#39;Mizop&#39;,
- &#39;Trafik y Jompy&#39;,
- &#39;SFDK&#39;,
- &#39;Porta&#39;,
- &#39;Santiuve y Elhombreviento&#39;,
- &#39;Lexa&#39;,
- &#39;Duo Kie&#39;,
- &#39;Killah Vega&#39;,
- &#39;995&#39;,
- &#39;Jesuly&#39;,
- &#39;MC Argueta&#39;,
- &#39;Oddliquor&#39;,
- &#39;Rayden&#39;,
- &#39;Lucas Pulcro&#39;,
- &#39;Crema&#39;,
- &#39;Joey Bada$$&#39;,
- &#39;Curricé&#39;,
- &#39;Hablando En Plata&#39;,
- &#39;Jotamayúscula&#39;,
- &#39;Santaflow&#39;,
- &#39;Tremendo&#39;,
- &#39;Ces&#39;,
- &#39;Jotamayúscula&#39;,
- &#39;Tosko&#39;,
- &#39;Shinoflow&#39;,
- &#39;Monkas Cru&#39;,
- &#39;Natos y Waor&#39;,
- &#39;Akil Ammar&#39;,
- &#39;Porta&#39;,
- &#39;Trade&#39;,
- &#39;Kendrick Lamar&#39;,
- &#39;Frank T&#39;,
- &#39;Ceerre, Lone y Pablo Gareta&#39;,
- &#39;Arce&#39;,
- &#39;Arbel López&#39;,
- &#39;Nikone&#39;,
- &#39;Kultama&#39;,
- &#39;Dzano&#39;,
- &#39;Zeta&#39;,
- &#39;Monkas Cru&#39;,
- &#39;Natos, Waor y Recycled J&#39;,
- &#39;Fyahbwoy&#39;,
- &#39;Lom&#39;,
- &#39;Arte MC&#39;,
- &#39;Agorazein&#39;,
- &#39;Apache&#39;,
- &#39;Chave&#39;,
- &#39;Morodo&#39;,
- &#39;Toteking&#39;,
- &#39;Joshu&#39;,
- &#39;Mucho Muchacho&#39;,
- &#39;Ceerre y Pablo Gareta&#39;,
- &#39;Lower diagonal&#39;,
- &#39;Mkr beats&#39;,
- &#39;Los chikos del maíz&#39;,
- &#39;Simio y R.A.K.S.&#39;,
- &#39;Natos y Waor&#39;,
- &#39;Salitastudios presenta Xuso&#39;,
- &#39;Blake&#39;,
- &#39;Shotta&#39;,
- &#39;Mr. Crazy&#39;,
- &#39;Sharif&#39;,
- &#39;Sharif&#39;,
- &#39;Sho&#39;,
- &#39;Triple XXX&#39;,
- &#39;Dsua y Dj Saot ST&#39;,
- &#39;Ocer y Rade&#39;,
- &#39;Porta&#39;,
- &#39;Rees&#39;,
- &#39;Iván Nieto&#39;,
- &#39;VKR&#39;,
- &#39;Jona&#39;,
- &#39;Drokmen&#39;,
- &#39;Mediyama&#39;,
- &#39;Rayden&#39;,
- &#39;PutoLargo y Legendario&#39;,
- &#39;Extremos del rap&#39;,
- &#39;Capaz&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Zaisé&#39;,
- &#39;Drokmen&#39;,
- &#39;Pj Ultra&#39;,
- &#39;Abracadaver&#39;,
- &#39;Emanero&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Sharif&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Tremendo&#39;,
- &#39;Ossian y Nachodowntempo&#39;,
- &#39;Alex Orellana y Jayder&#39;,
- &#39;Tremendo&#39;,
- &#39;A3Bandas&#39;,
- &#39;Seder&#39;,
- &#39;SFDK&#39;,
- &#39;Bejo&#39;,
- &#39;Leyenda urbana (LUR)&#39;,
- &#39;Korazón Crudo&#39;,
- &#39;Dan&#39;,
- &#39;Foyone&#39;,
- &#39;Erick Hervé y Yeke Boy&#39;,
- &#39;Los trovadores de la lírica perdida&#39;,
- &#39;Pablo Hasél&#39;,
- &#39;Agorazein&#39;,
- &#39;Cheb Rubën&#39;,
- &#39;Chalifah&#39;,
- &#39;Tosko&#39;,
- &#39;Tr3s monos&#39;,
- &#39;El Chojin&#39;,
- &#39;Agorazein&#39;,
- &#39;Shé&#39;,
- &#39;Ceerre, Lone y Pablo Gareta&#39;,
- &#39;C. Tangana&#39;,
- &#39;Foyone&#39;,
- &#39;Facundo Gonzalez&#39;,
- &#39;Decas&#39;,
- &#39;Il Yotha&#39;,
- &#39;Mkr Fran&#39;,
- &#39;Cloaka Company&#39;,
- &#39;Vico C&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Magoner y Jona&#39;,
- &#39;Jesuly&#39;,
- &#39;Sule B&#39;,
- &#39;Zirok&#39;,
- &#39;Rels B.&#39;,
- &#39;La Cara B&#39;,
- &#39;Bajo Mínimos&#39;,
- &#39;Ceerre, Lone y Pablo Gareta&#39;,
- &#39;Acción Sánchez y Jotandjota&#39;,
- &#39;ZPU&#39;,
- &#39;J. Parker&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Eneyser&#39;,
- &#39;SFDK&#39;,
- &#39;Syla&#39;,
- &#39;Perdi&#39;,
- &#39;Flowklorikos&#39;,
- &#39;Frank T&#39;,
- &#39;Humanu&#39;,
- &#39;Sule B&#39;,
- &#39;Xhelazz&#39;,
- &#39;Xhelazz&#39;,
- &#39;Abram&#39;,
- &#39;Violadores del verso&#39;,
- &#39;Blake&#39;,
- &#39;Juan Profundo&#39;,
- &#39;Lágrimas de sangre&#39;,
- &#39;Santaflow y El Chulo del Megane&#39;,
- &#39;Frantik Unotres y Crok B.I.G. player&#39;,
- &#39;Juaninacka&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;Mr. Crazy&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;Arce&#39;,
- &#39;Viic Sánchez&#39;,
- &#39;Alteregos&#39;,
- &#39;SFDK&#39;,
- &#39;Juaninacka&#39;,
- &#39;Bombony Montana y Lone&#39;,
- &#39;Shinoflow&#39;,
- &#39;Nikone&#39;,
- &#39;Toteking&#39;,
- &#39;Costa&#39;,
- &#39;BeMoL&#39;,
- &#39;Dellafuente&#39;,
- &#39;Gordo Master&#39;,
- &#39;Ceerre y Pablo Gareta&#39;,
- &#39;Graff y Melanie Gomes&#39;,
- &#39;Doshermanos&#39;,
- &#39;La hawha band&#39;,
- &#39;SFDK&#39;,
- &#39;Maikel de la Calle&#39;,
- &#39;Shotta&#39;,
- &#39;Humanu&#39;,
- &#39;El Momo&#39;,
- &#39;Filorapfia&#39;,
- &#39;Sharif&#39;,
- &#39;Jimeno&#39;,
- &#39;Samu y Nuah Soul&#39;,
- &#39;Abram&#39;,
- &#39;Jesuly&#39;,
- &#39;Eseka&#39;,
- &#39;Zarcort&#39;,
- &#39;Sharif&#39;,
- &#39;Oscarasecas&#39;,
- &#39;Akil Ammar&#39;,
- &#39;Darmo&#39;,
- &#39;Danie y Lasio&#39;,
- &#39;El Momo&#39;,
- &#39;Rusman&#39;,
- &#39;Hablando En Plata&#39;,
- &#39;Rels B.&#39;,
- &#39;Kiba&#39;,
- &#39;Arma Blanca&#39;,
- &#39;Piezas, Jayder y Green Valley&#39;,
- &#39;Cloaka Company&#39;,
- &#39;Xali&#39;,
- &#39;Charly Efe y Loren D&#39;,
- &#39;Dellafuente&#39;,
- &#39;Jonas.J&#39;,
- &#39;Arkangeles&#39;,
- &#39;Santaflow&#39;,
- &#39;Blake&#39;,
- &#39;Rayden&#39;,
- &#39;BeMoL&#39;,
- &#39;Shotta&#39;,
- &#39;Legendario y Baghira&#39;,
- &#39;Frank T&#39;,
- &#39;Kloy&#39;,
- &#39;Morgan y Gordo del Funk&#39;,
- &#39;Meko&#39;,
- &#39;Sho&#39;,
- &#39;Brawler&#39;,
- &#39;Bombos Records&#39;,
- &#39;Tremendo&#39;,
- &#39;Khan&#39;,
- &#39;Cheb Rubën&#39;,
- &#39;Evan VP&#39;,
- &#39;Zetazen&#39;,
- &#39;Santaflow&#39;,
- &#39;SFDK&#39;,
- &#39;ZPU&#39;,
- &#39;Nomadasquad&#39;,
- &#39;Elemento Clab&#39;,
- &#39;Ldm y Fany Vilches&#39;,
- &#39;Frank T&#39;,
- &#39;Alcad y Valanser&#39;,
- &#39;Trauma&#39;,
- &#39;Chalifah&#39;,
- &#39;Dorian Gray&#39;,
- &#39;Dzano&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;Lom&#39;,
- &#39;Panzers&#39;,
- &#39;Pimp Flaco&#39;,
- &#39;Rénove&#39;,
- &#39;Payul Jam ultra&#39;,
- &#39;Agorazein&#39;,
- &#39;SBRV&#39;,
- &#39;Alberto Gambino&#39;,
- &#39;Khan&#39;,
- &#39;Akapellah&#39;,
- &#39;Mr. Crazy&#39;,
- &#39;Facundo Gonzalez&#39;,
- &#39;El Chojin&#39;,
- &#39;Drake&#39;,
- &#39;Exceso&#39;,
- &#39;Toteking&#39;,
- &#39;Ceerre y Pablo Gareta&#39;,
- &#39;Agu&#39;,
- &#39;Zenit&#39;,
- &#39;Jotandjota&#39;,
- &#39;Demo&#39;,
- &#39;Krvzy&#39;,
- &#39;Erin&#39;,
- &#39;Anonimato&#39;,
- &#39;Sule B&#39;,
- &#39;Jefe de la M&#39;,
- &#39;Praxiz&#39;,
- &#39;Gordo Master&#39;,
- &#39;Jotandjota&#39;,
- &#39;Sbow&#39;,
- &#39;Cronos, Chester y Dj Eklipse&#39;,
- &#39;Xuso y Skill&#39;,
- &#39;Porta&#39;,
- &#39;Xcese&#39;,
- &#39;Merxe&#39;,
- &#39;Mowlihawk&#39;,
- &#39;Ferta&#39;,
- &#39;Punto de encuentro&#39;,
- &#39;SFDK&#39;,
- &#39;Erick Hervé y Yeke Boy&#39;,
- &#39;Gordo Master&#39;,
- &#39;Kako y Norver Producciones&#39;,
- &#39;Lágrimas de sangre&#39;,
- &#39;Grand Groove&#39;,
- &#39;Lopes&#39;,
- &#39;Krvzy&#39;,
- &#39;Xuso y Skill&#39;,
- &#39;Darmo&#39;,
- &#39;Rx Lpm&#39;,
- &#39;Erick Hervé y Yeke Boy&#39;,
- &#39;Foyone&#39;,
- &#39;Polaco da PLC&#39;,
- &#39;Peter North (Hoop)&#39;,
- &#39;Xenon&#39;,
- &#39;Jefe de la M&#39;,
- &#39;Hard GZ&#39;,
- &#39;Little Pepe&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;Nach&#39;,
- &#39;Alberto Gambino&#39;,
- &#39;Draiden&#39;,
- &#39;Pablo Hasél&#39;,
- &#39;Dante&#39;,
- &#39;Elosue&#39;,
- &#39;Cartel de santa&#39;,
- &#39;Facundo Gonzalez&#39;,
- &#39;Lágrimas de sangre&#39;,
- &#39;Loren&#39;,
- &#39;Danie y Lasio&#39;,
- &#39;Hard GZ&#39;,
- &#39;Pol&#39;,
- &#39;Bastos guerreros del ritmo&#39;,
- &#39;Zekinash&#39;,
- &#39;Wol&#39;,
- &#39;Ika Kinesia&#39;,
- &#39;Juaninacka y Frainstrumentos&#39;,
- &#39;Dellafuente y Maka&#39;,
- &#39;Lom&#39;,
- &#39;Ari&#39;,
- &#39;ZPU&#39;,
- &#39;Dani Ro&#39;,
- &#39;Toteking&#39;,
- &#39;Tutu&#39;,
- &#39;Rels B.&#39;,
- &#39;Juancho Marqués y Elhombreviento&#39;,
- &#39;Soste Warrimor&#39;,
- &#39;SFDK&#39;,
- &#39;Frank T&#39;,
- &#39;Veintiocho&#39;,
- &#39;Sniper&#39;,
- &#39;Sergi de Leyenda urbana&#39;,
- &#39;Swan Fyahbwoy&#39;,
- &#39;Kidd Keo&#39;,
- &#39;Porta&#39;,
- &#39;El Momo y Pseudo Beats&#39;,
- &#39;Salitastudios presenta Xuso&#39;,
- &#39;Juaninacka&#39;,
- &#39;Swan Fyahbwoy&#39;,
- &#39;Macklemore y Ryan Lewis&#39;,
- &#39;Xenon&#39;,
- &#39;Juaninacka&#39;,
- &#39;Shé&#39;,
- &#39;SFDK&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Rebel&#39;,
- &#39;Nuelky&#39;,
- &#39;Ner y STBN&#39;,
- &#39;Ciniko&#39;,
- &#39;El Chojin&#39;,
- &#39;Drake&#39;,
- &#39;Cres&#39;,
- &#39;Tron Dosh&#39;,
- &#39;Sátira&#39;,
- &#39;Maka&#39;,
- &#39;Pimp Flaco&#39;,
- &#39;Sonar y Mecka&#39;,
- &#39;Pakto&#39;,
- &#39;Aloy&#39;,
- &#39;Zodia&#39;,
- &#39;Doshermanos&#39;,
- &#39;Cij y Srcrew&#39;,
- &#39;Chukky&#39;,
- &#39;Maikel de la Calle&#39;,
- &#39;Elemento Clab&#39;,
- &#39;Lil Dami&#39;,
- &#39;El Tralla&#39;,
- &#39;Khan&#39;,
- &#39;Elgordotoloko&#39;,
- &#39;Soko rios&#39;,
- &#39;El Chojin&#39;,
- &#39;Krvzy&#39;,
- &#39;Danie y Lasio&#39;,
- &#39;Lom&#39;,
- &#39;Desplante&#39;,
- &#39;Jonas.J&#39;,
- &#39;Capaz&#39;,
- &#39;Foyone&#39;,
- &#39;Toteking y Shotta&#39;,
- &#39;Toteking&#39;,
- &#39;Niko&#39;,
- &#39;Porta y Mizok&#39;,
- &#39;Freshmakers&#39;,
- &#39;H Roto y Adrián Groves&#39;,
- &#39;Efe Yerom&#39;,
- &#39;Kidd Keo&#39;,
- &#39;Kinky bwoy&#39;,
- &#39;Isusko&#39;,
- &#39;Boti&#39;,
- &#39;Erick Hervé y Dj Taktel&#39;,
- &#39;Trauma&#39;,
- &#39;CalizK&#39;,
- &#39;Boti&#39;,
- &#39;Crema&#39;,
- &#39;Jonas.J&#39;,
- &#39;Ira&#39;,
- &#39;Toteking&#39;,
- &#39;Jesuly&#39;,
- &#39;Santaflow&#39;,
- &#39;Ceerre y Pablo Gareta&#39;,
- &#39;Celedonio&#39;,
- &#39;Artesanos&#39;,
- &#39;Eminem&#39;,
- &#39;Silvia Amal&#39;,
- &#39;Sr. Zambrana&#39;,
- &#39;Shé&#39;,
- &#39;Jotamayúscula&#39;,
- &#39;Sin&#39;,
- &#39;Danh einai&#39;,
- &#39;Ferta&#39;,
- &#39;Porta&#39;,
- &#39;Soste&#39;,
- &#39;Exceso&#39;,
- &#39;Charly Efe, Yusty y Toni&#39;,
- &#39;Humanu&#39;,
- &#39;Larah Fémina&#39;,
- &#39;SFDK&#39;,
- &#39;Rayden&#39;,
- &#39;The Riddle&#39;,
- &#39;Iván Abando&#39;,
- &#39;Fernando Álvarez&#39;,
- &#39;Slid&#39;,
- &#39;Xenon&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Jesuly&#39;,
- &#39;Kodigo 36&#39;,
- &#39;Gordo Master y Dj Onedah&#39;,
- &#39;El Bezea&#39;,
- &#39;Shé&#39;,
- &#39;Mowlihawk&#39;,
- &#39;Carmona&#39;,
- &#39;Maikel de la Calle&#39;,
- &#39;Kako y El Chaval&#39;,
- &#39;Toteking&#39;,
- &#39;Hard GZ&#39;,
- &#39;Iván Nieto&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Isusko&#39;,
- &#39;Dellafuente&#39;,
- &#39;Cyclo&#39;,
- &#39;Porta&#39;,
- &#39;Nephew&#39;,
- &#39;Lit.OS&#39;,
- &#39;Evan VP&#39;,
- &#39;Juancho Marqués&#39;,
- &#39;Rayden&#39;,
- &#39;SFDK&#39;,
- &#39;Kodigo Norte&#39;,
- &#39;Comando katana&#39;,
- &#39;CPV&#39;,
- &#39;Pekado&#39;,
- &#39;Jotandjota&#39;,
- &#39;Emizero&#39;,
- &#39;Zeidah&#39;,
- &#39;Boti&#39;,
- &#39;Gran Pueblo&#39;,
- &#39;Elphomega&#39;,
- &#39;El Niño Snake&#39;,
- &#39;Saunah&#39;,
- &#39;Core&#39;,
- &#39;Panzers&#39;,
- &#39;Porta&#39;,
- &#39;Hard GZ&#39;,
- &#39;Xhelazz&#39;,
- &#39;El Chojin&#39;,
- &#39;Falsalarma&#39;,
- &#39;Hablando En Plata&#39;,
- &#39;Lower diagonal&#39;,
- &#39;Kaze&#39;,
- &#39;Trad Montana y Lil Ghalin&#39;,
- &#39;Sho&#39;,
- &#39;Soul Villain&#39;,
- &#39;Ceerre y Pablo Gareta&#39;,
- &#39;Smau y Waor&#39;,
- &#39;Davile y Rubenbe&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;Krime costa&#39;,
- &#39;CPV&#39;,
- &#39;Sondkalle&#39;,
- &#39;Lágrimas de sangre&#39;,
- &#39;Trad Montana y Lil Ghalin&#39;,
- &#39;C. Tangana&#39;,
- &#39;Flowklorikos&#39;,
- &#39;Vico C&#39;,
- &#39;El Tralla&#39;,
- &#39;Pino&#39;,
- &#39;Sicario y Hazhe&#39;,
- &#39;Javitoker y Md Kramg&#39;,
- &#39;Charly Efe&#39;,
- &#39;Emanero&#39;,
- &#39;Duo Kie&#39;,
- &#39;Abram&#39;,
- &#39;Swan Fyahbwoy&#39;,
- &#39;Jefe de la M&#39;,
- &#39;Jotamayúscula&#39;,
- &#39;Tiiti&#39;,
- &#39;Grand Groove&#39;,
- &#39;Delgado San&#39;,
- &#39;Shinoflow&#39;,
- &#39;Daddy maza&#39;,
- &#39;Reinexxx&#39;,
- &#39;Ra mc&#39;,
- &#39;Kase.O&#39;,
- &#39;Darmo&#39;,
- &#39;J Hus y C. Tangana&#39;,
- &#39;Doble sentido&#39;,
- &#39;Gordo Master&#39;,
- &#39;Triple XXX&#39;,
- &#39;Falsalarma&#39;,
- &#39;Rapsusklei y Aniki&#39;,
- &#39;Arce&#39;,
- &#39;Foyone&#39;,
- &#39;Kinder Malo y Pimp Flaco&#39;,
- &#39;Genioh y Cadierno&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;Los chikos del maíz&#39;,
- &#39;Sacro&#39;,
- &#39;Sheldrack&#39;,
- &#39;Rayden&#39;,
- &#39;Salitastudios presenta Xuso&#39;,
- &#39;El Chojin&#39;,
- &#39;Zetazen&#39;,
- &#39;Zenit&#39;,
- &#39;Nach&#39;,
- &#39;Vidisc&#39;,
- &#39;Crema y Chaman&#39;,
- &#39;Shotta&#39;,
- &#39;Lágrimas de sangre&#39;,
- &#39;Aromic&#39;,
- &#39;Trade y Dj Chel&#39;,
- &#39;Los chikos del maíz&#39;,
- &#39;Sanon&#39;,
- &#39;Zeidah&#39;,
- &#39;Rénove&#39;,
- &#39;ZPU&#39;,
- &#39;Anibal&#39;,
- &#39;Hard GZ&#39;,
- &#39;Sho&#39;,
- &#39;Jesuly&#39;,
- &#39;Eddie MV&#39;,
- &#39;Pino y Lisane&#39;,
- &#39;El Momo&#39;,
- &#39;Elosue&#39;,
- &#39;Jefe de la M&#39;,
- &#39;Prok&#39;,
- &#39;Porta&#39;,
- &#39;Locus&#39;,
- &#39;Gordo Master&#39;,
- &#39;Fort Apache&#39;,
- &#39;Juancho Marqués&#39;,
- &#39;Arma Blanca&#39;,
- &#39;Kultama&#39;,
- &#39;Crema&#39;,
- &#39;Karvoh y Dj Rune&#39;,
- &#39;Recycled J y Selecta&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Fyahbwoy&#39;,
- &#39;Genioh&#39;,
- &#39;Saunah&#39;,
- &#39;May&#39;,
- &#39;Valtonyc&#39;,
- &#39;Lower diagonal&#39;,
- &#39;Ricky Hombre Libre&#39;,
- &#39;Ossian y Nachodowntempo&#39;,
- &#39;Amsa Crew&#39;,
- &#39;Khan&#39;,
- &#39;Cheb Rubën&#39;,
- &#39;Jotamayúscula&#39;,
- &#39;Geronación&#39;,
- &#39;Enigmah&#39;,
- &#39;Agorazein&#39;,
- &#39;Porta&#39;,
- &#39;Okram&#39;,
- &#39;Xenon&#39;,
- &#39;Rels B.&#39;,
- &#39;3coma14&#39;,
- &#39;Shinoflow&#39;,
- &#39;Iván Nieto&#39;,
- &#39;Legendario&#39;,
- &#39;Okram&#39;,
- &#39;Charly Efe&#39;,
- &#39;Logicos&#39;,
- &#39;Sharif&#39;,
- &#39;Peibol&#39;,
- &#39;Charly Efe y Loren D&#39;,
- &#39;Arce&#39;,
- &#39;Tosko&#39;,
- &#39;Beret&#39;,
- &#39;Retroh&#39;,
- &#39;ZPU&#39;,
- &#39;Juaninacka&#39;,
- &#39;Ambkor&#39;,
- &#39;Santa RM&#39;,
- &#39;Vico C&#39;,
- &#39;Sticky M.A.&#39;,
- &#39;Macklemore y Ryan Lewis&#39;,
- &#39;Porta&#39;,
- &#39;Isusko &amp; SBRV&#39;,
- &#39;Hijo Prodigo&#39;,
- &#39;Capaz&#39;,
- &#39;Nasta&#39;,
- &#39;Maikel de la Calle&#39;,
- &#39;Pekado&#39;,
- &#39;Malaka Youth&#39;,
- &#39;Abram&#39;,
- &#39;Pablo Hasél&#39;,
- &#39;Erot&#39;,
- &#39;Cres&#39;,
- &#39;Erick Hervé y Yeke Boy&#39;,
- &#39;Krime costa&#39;,
- &#39;Hazhe&#39;,
- &#39;Nach&#39;,
- &#39;Natos y Waor&#39;,
- &#39;Shinoflow y Pablo Peneda&#39;,
- &#39;Khan&#39;,
- &#39;Rayden&#39;,
- &#39;J. Bickle&#39;,
- &#39;Darmo&#39;,
- &#39;Nuelky&#39;,
- &#39;Dani Ro&#39;,
- &#39;Dan&#39;,
- &#39;Aromic&#39;,
- &#39;Sticky M.A.&#39;,
- &#39;Elyfreestyle&#39;,
- &#39;Divan y Pandora&#39;,
- &#39;Zirok&#39;,
- &#39;La hawha band&#39;,
- &#39;Ambkor&#39;,
- &#39;Kaze&#39;,
- &#39;Billy el niño y Don Dinero&#39;,
- &#39;Carmona&#39;,
- &#39;Irreverencias&#39;,
- &#39;Monkas Cru&#39;,
- &#39;Sharif&#39;,
- &#39;Beto&#39;,
- &#39;Piter&#39;,
- &#39;aiSHO y Javier El Nohble&#39;,
- &#39;Nach&#39;,
- &#39;Retroh&#39;,
- &#39;Cartel de santa&#39;,
- &#39;Lexa&#39;,
- &#39;ZPU&#39;,
- &#39;Zarcort&#39;,
- &#39;Soge Culebra&#39;,
- &#39;Khan&#39;,
- &#39;La Cara B&#39;,
- &#39;Flowklorikos&#39;,
- &#39;Nach&#39;,
- &#39;Dan&#39;,
- &#39;Morgan, Vito, Gordo del Funk y Acid Lemon&#39;,
- &#39;El Santo y Tosko&#39;,
- &#39;Shinoflow&#39;,
- &#39;Mala Juntera&#39;,
- &#39;Soriano&#39;,
- &#39;Retroh&#39;,
- &#39;Pablo Hasél&#39;,
- &#39;Porta&#39;,
- &#39;Nathy Peluso&#39;,
- &#39;Denom&#39;,
- &#39;Pekado y Cjgaditano&#39;,
- &#39;Matasvandals&#39;,
- &#39;Sharif&#39;,
- &#39;Eneyser&#39;,
- &#39;Chukky&#39;,
- &#39;ZPU&#39;,
- &#39;Aniki&#39;,
- &#39;Dj Rune y Trafik&#39;,
- &#39;El Bezea&#39;,
- &#39;Javo&#39;,
- &#39;Dlux&#39;,
- &#39;Rapsusklei, Sharif y Juaninacka&#39;,
- &#39;Mizop&#39;,
- &#39;Jako CDC&#39;,
- &#39;Santaflow&#39;,
- &#39;Blake&#39;,
- &#39;Shinoflow&#39;,
- &#39;Polaco da PLC&#39;,
- &#39;Aika&#39;,
- &#39;Panzers&#39;,
- &#39;Porta&#39;,
- &#39;Guante Blanco&#39;,
- &#39;El Chaval&#39;,
- &#39;SBRV&#39;,
- &#39;Lom&#39;,
- &#39;Ayax&#39;,
- &#39;Killah Vega&#39;,
- &#39;Vico C&#39;,
- &#39;Evan VP&#39;,
- &#39;El Disop&#39;,
- &#39;El Momo&#39;,
- &#39;Irdha y Frei&#39;,
- &#39;Recycled J&#39;,
- &#39;Geiser&#39;,
- &#39;Drake&#39;,
- &#39;KPF&#39;,
- &#39;Porta&#39;,
- &#39;SFDK&#39;,
- &#39;Nas&#39;,
- &#39;Eneyser y Luismicarma&#39;,
- &#39;Wol&#39;,
- &#39;Aniki&#39;,
- &#39;Zansed&#39;,
- &#39;Curri Currito&#39;,
- &#39;Ambkor&#39;,
- &#39;Kyne&#39;,
- &#39;La via muerta&#39;,
- &#39;Okram&#39;,
- &#39;Lone&#39;,
- &#39;S&amp;oacute;lo los solo&#39;,
- &#39;Imperio urbano&#39;,
- &#39;CPV&#39;,
- &#39;Nach&#39;,
- &#39;Souchi&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Wisso&#39;,
- &#39;Pekado&#39;,
- &#39;PutoLargo y Legendario&#39;,
- &#39;Kidd Keo&#39;,
- &#39;El Momo&#39;,
- &#39;Natos y Waor&#39;,
- &#39;995&#39;,
- &#39;Morgan y Gordo del Funk&#39;,
- &#39;ZPU&#39;,
- &#39;Boti&#39;,
- &#39;El Chojin&#39;,
- &#39;Rx Lpm&#39;,
- &#39;Pseudónimo&#39;,
- &#39;Piso 21 y Maikel de la Calle&#39;,
- &#39;Rapsoda&#39;,
- &#39;Celedonio&#39;,
- &#39;Masstone&#39;,
- &#39;Delhaz&#39;,
- &#39;Juaninacka&#39;,
- &#39;Xenon y Romano&#39;,
- &#39;Alucard&#39;,
- &#39;Nach&#39;,
- &#39;Zonah Producciones&#39;,
- &#39;Malafama squad&#39;,
- &#39;Duki y Drefquila&#39;,
- &#39;Rizalez&#39;,
- &#39;Pekado&#39;,
- &#39;Wisso&#39;,
- &#39;Natos y Waor&#39;,
- &#39;Lom&#39;,
- &#39;Panzers&#39;,
- &#39;Jesuly&#39;,
- &#39;Pekado, Phalantas y Eclipse&#39;,
- &#39;Shotta&#39;,
- &#39;Kase.O&#39;,
- &#39;Joey Bada$$&#39;,
- &#39;Greenflaco&#39;,
- &#39;Rapsusklei&#39;,
- &#39;Legendario&#39;,
- &#39;Santa RM&#39;,
- &#39;Rebeliom do inframundo&#39;,
- &#39;W. Cheff y Bustaphort&#39;,
- &#39;Lil Dami&#39;,
- &#39;ZPU&#39;,
- &#39;Rayden&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;Hard GZ&#39;,
- &#39;Korazón Crudo&#39;,
- &#39;Natos y Waor&#39;,
- &#39;El Langui&#39;,
- &#39;Santaflow&#39;,
- &#39;Blake&#39;,
- &#39;Piezas y Jayder&#39;,
- &#39;SFDK&#39;,
- &#39;Ari&#39;,
- &#39;SFDK&#39;,
- &#39;Nach Scratch&#39;,
- &#39;Pekado&#39;,
- &#39;Darmo&#39;,
- &#34;Griffi y Samuel O&#39;Kane&#34;,
- &#39;Isusko y SBRV&#39;,
- &#39;S Curro y Feo1&#39;,
- &#39;Dani Ro&#39;,
- &#39;SFDK&#39;,
- &#39;Escualo&#39;,
- &#39;Endecah&#39;,
- &#39;Toteking&#39;,
- &#39;El Santo y Tosko&#39;,
- &#39;Cloud y Nayck&#39;,
- &#39;Daddy maza&#39;,
- &#39;El Santo y Tosko&#39;,
- &#39;Geronación&#39;,
- &#39;Requiem In Pace&#39;,
- &#39;Elepé&#39;,
- &#39;Hijo Prodigo y Juho&#39;,
- &#39;Elio Toffana&#39;,
- &#39;Capaz&#39;,
- &#39;Triple3&#39;,
- &#39;Toteking&#39;,
- &#39;Ocer y Rade&#39;,
- &#39;Rian&#39;,
- &#39;Korazón Crudo&#39;,
- &#39;Porta&#39;,
- &#39;Isusko&#39;,
- &#39;Momo&#39;,
- &#39;Genioh&#39;,
- &#39;Xinkoa&#39;,
- &#39;Sharif&#39;,
- &#39;Kako M.&#39;,
- &#39;Krisan&#39;,
- &#39;Danie y Lasio&#39;,
- &#39;Fyahbwoy&#39;,
- &#39;Kaktan&#39;,
- &#39;Eneyser&#39;,
- &#39;Natos y Waor&#39;,
- &#39;Isusko&#39;,
- &#39;Rx Lpm&#39;,
- &#39;El Chojin&#39;,
- &#39;El Santo&#39;,
- &#39;Kidd Keo&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[135]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -56670,500 +55401,6 @@ if (outputEl) {{
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[251]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataf</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[251]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>id</th>
-      <th>artista</th>
-      <th>cancion</th>
-      <th>album</th>
-      <th>letra</th>
-      <th>anyo</th>
-      <th>visitas</th>
-      <th>song_vector</th>
-      <th>X</th>
-      <th>Y</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>305</th>
-      <td>30</td>
-      <td>Lágrimas de sangre</td>
-      <td>Cuando sale el sol (con Esegé)</td>
-      <td>La real música explícita</td>
-      <td>De vuelta a casa, el corazón y el alma piden t...</td>
-      <td>2011</td>
-      <td>190535</td>
-      <td>[[0.027896624, 0.096956015, -0.094279185, -0.1...</td>
-      <td>-0.177164</td>
-      <td>0.006327</td>
-    </tr>
-    <tr>
-      <th>1078</th>
-      <td>33</td>
-      <td>El Chojin</td>
-      <td>Rap vs Racismo (con Lírico, El Santo, El Langi...</td>
-      <td>El ataque de los que observaban</td>
-      <td>[El Chojin]\nEl subidón de estar aquí todos un...</td>
-      <td>2011</td>
-      <td>74232</td>
-      <td>[[0.014018081, 0.09711766, -0.08232481, -0.142...</td>
-      <td>-0.066238</td>
-      <td>0.004114</td>
-    </tr>
-    <tr>
-      <th>1087</th>
-      <td>42</td>
-      <td>Nach</td>
-      <td>El idioma de los dioses</td>
-      <td>Mejor que el silencio</td>
-      <td>Si estoy solo tu me acojes eres mi fiel compañ...</td>
-      <td>2011</td>
-      <td>114787</td>
-      <td>[[-0.0013824488, 0.1000917, -0.0859672, -0.151...</td>
-      <td>-0.221598</td>
-      <td>0.006514</td>
-    </tr>
-    <tr>
-      <th>1395</th>
-      <td>20</td>
-      <td>Zeropositivo</td>
-      <td>Quiero que sea guapa</td>
-      <td>Soul</td>
-      <td>Oye... JM...\n\n\n[Senepe]\nQuiero que escape ...</td>
-      <td>2010</td>
-      <td>73871</td>
-      <td>[[0.0043968004, 0.10353358, -0.11090771, -0.15...</td>
-      <td>-0.459726</td>
-      <td>0.010207</td>
-    </tr>
-    <tr>
-      <th>1565</th>
-      <td>25</td>
-      <td>Rapsusklei</td>
-      <td>Te quiero</td>
-      <td>Pandemia</td>
-      <td>Y es que te quiero.\nLo tuyo es diferente, y c...</td>
-      <td>2010</td>
-      <td>142186</td>
-      <td>[[0.010644885, 0.098070666, -0.08423748, -0.13...</td>
-      <td>-0.439171</td>
-      <td>0.010171</td>
-    </tr>
-    <tr>
-      <th>2072</th>
-      <td>37</td>
-      <td>Dia Sexto</td>
-      <td>Ven follame</td>
-      <td>Sin álbum, es un tema suelto</td>
-      <td>Ven desnúdate,\nsabes que hacer cuando hablamo...</td>
-      <td>2008</td>
-      <td>107713</td>
-      <td>[[-0.0025611704, 0.078077555, -0.11184338, -0....</td>
-      <td>0.019850</td>
-      <td>-0.000378</td>
-    </tr>
-    <tr>
-      <th>2317</th>
-      <td>7</td>
-      <td>Crema</td>
-      <td>Cada uno en su lugar</td>
-      <td>Agorazein</td>
-      <td>Es como si los dos decidiéramos... jugar a es...</td>
-      <td>2008</td>
-      <td>129919</td>
-      <td>[[0.011748264, 0.11065388, -0.091687396, -0.15...</td>
-      <td>-0.297497</td>
-      <td>0.007573</td>
-    </tr>
-    <tr>
-      <th>2323</th>
-      <td>13</td>
-      <td>Crema</td>
-      <td>Ego</td>
-      <td>Ego</td>
-      <td>Es el sonido de este enjambre\ngolpea mi cabez...</td>
-      <td>2007</td>
-      <td>90143</td>
-      <td>[[0.011834597, 0.09551268, -0.096300215, -0.15...</td>
-      <td>-0.251218</td>
-      <td>0.007665</td>
-    </tr>
-    <tr>
-      <th>2399</th>
-      <td>34</td>
-      <td>Pol</td>
-      <td>Buenos dias princesa [Base Internet]</td>
-      <td>Sin álbum, es un tema suelto</td>
-      <td>Buenos días princesa, he soñado toda la noche ...</td>
-      <td>2008</td>
-      <td>84323</td>
-      <td>[[0.011014387, 0.101511575, -0.1035553, -0.159...</td>
-      <td>-0.378651</td>
-      <td>0.009687</td>
-    </tr>
-    <tr>
-      <th>2600</th>
-      <td>15</td>
-      <td>Nach</td>
-      <td>Nada ni nadie</td>
-      <td>Un día en suburbia</td>
-      <td>Busco una calma inalcanzable\nla atmósfera aqu...</td>
-      <td>2008</td>
-      <td>83464</td>
-      <td>[[0.017206898, 0.086513415, -0.09384568, -0.16...</td>
-      <td>-0.447627</td>
-      <td>0.010213</td>
-    </tr>
-    <tr>
-      <th>2788</th>
-      <td>38</td>
-      <td>Blaze</td>
-      <td>Mi historia de amor [Base Internet]</td>
-      <td>Bienveni2 a mi mundo</td>
-      <td>-Sueño ser tu sueño y vivir siempre en tu memo...</td>
-      <td>2008</td>
-      <td>61257</td>
-      <td>[[0.012820304, 0.084069036, -0.09631571, -0.16...</td>
-      <td>-0.497163</td>
-      <td>0.011124</td>
-    </tr>
-    <tr>
-      <th>2839</th>
-      <td>34</td>
-      <td>Xhelazz</td>
-      <td>La soledad comienza</td>
-      <td>El soñador elegido</td>
-      <td>Cerrando los ojos, se apaga el universo\npeque...</td>
-      <td>2007</td>
-      <td>79047</td>
-      <td>[[0.027771471, 0.105792284, -0.07584613, -0.15...</td>
-      <td>-0.267722</td>
-      <td>0.007934</td>
-    </tr>
-    <tr>
-      <th>2929</th>
-      <td>14</td>
-      <td>Flowklorikos</td>
-      <td>Por amor al odio</td>
-      <td>Donde duele inspira</td>
-      <td>No se paliar mi odio con el crono movimiento\n...</td>
-      <td>2009</td>
-      <td>158833</td>
-      <td>[[0.015316003, 0.090801194, -0.08577811, -0.15...</td>
-      <td>-0.372932</td>
-      <td>0.008644</td>
-    </tr>
-    <tr>
-      <th>2938</th>
-      <td>23</td>
-      <td>El Chojin</td>
-      <td>Ríe cuando puedas</td>
-      <td>Striptease</td>
-      <td>Ríe cuando puedas, llora cuando lo necesites, ...</td>
-      <td>2007</td>
-      <td>131700</td>
-      <td>[[0.011188162, 0.107423626, -0.08895715, -0.15...</td>
-      <td>-0.496909</td>
-      <td>0.010386</td>
-    </tr>
-    <tr>
-      <th>3071</th>
-      <td>46</td>
-      <td>Kase.O</td>
-      <td>Cantando</td>
-      <td>Vivir para contarlo</td>
-      <td>Mete un dedo al culo y sácate un moco si quier...</td>
-      <td>2006</td>
-      <td>128172</td>
-      <td>[[0.019270033, 0.07405472, -0.084261246, -0.14...</td>
-      <td>-0.064793</td>
-      <td>0.002604</td>
-    </tr>
-    <tr>
-      <th>3871</th>
-      <td>21</td>
-      <td>Kase.O y Kamikaze</td>
-      <td>Quieres</td>
-      <td>R De Rumba</td>
-      <td>Concedeme un instante, quizás me encuentres in...</td>
-      <td>2004</td>
-      <td>85858</td>
-      <td>[[0.016084129, 0.08862256, -0.07841121, -0.165...</td>
-      <td>-0.054957</td>
-      <td>0.002069</td>
-    </tr>
-    <tr>
-      <th>4220</th>
-      <td>40</td>
-      <td>Violadores del verso y Kase.O</td>
-      <td>Mierda</td>
-      <td>Mierda</td>
-      <td>Oh! inmortal Poseidón el del furioso tridente,...</td>
-      <td>2001</td>
-      <td>135361</td>
-      <td>[[-0.0019153269, 0.0891924, -0.077300005, -0.1...</td>
-      <td>0.241957</td>
-      <td>-0.004195</td>
-    </tr>
-    <tr>
-      <th>4863</th>
-      <td>48</td>
-      <td>Beret</td>
-      <td>Lo siento</td>
-      <td>Sin álbum</td>
-      <td>Tú siempre decías que nunca te irías si no te ...</td>
-      <td>2018</td>
-      <td>133808</td>
-      <td>[[0.016702555, 0.08881225, -0.08274364, -0.147...</td>
-      <td>-0.582942</td>
-      <td>0.011474</td>
-    </tr>
-    <tr>
-      <th>4898</th>
-      <td>28</td>
-      <td>Rels B.</td>
-      <td>Lejos de ti</td>
-      <td>Flakk Daniel’s LP</td>
-      <td>[Estribillo]\nLejos de ti no estoy tan mal,\nL...</td>
-      <td>2018</td>
-      <td>70556</td>
-      <td>[[-0.0109344, 0.100774996, -0.08398638, -0.124...</td>
-      <td>-0.395149</td>
-      <td>0.007317</td>
-    </tr>
-    <tr>
-      <th>5222</th>
-      <td>22</td>
-      <td>Natos y Waor</td>
-      <td>Cicatrices</td>
-      <td>Cicatrices</td>
-      <td>[Waor]\n¿Quién gritara nuestro nombre cuando e...</td>
-      <td>2018</td>
-      <td>113570</td>
-      <td>[[0.021847846, 0.06688114, -0.086081445, -0.15...</td>
-      <td>-0.087543</td>
-      <td>0.003602</td>
-    </tr>
-    <tr>
-      <th>5507</th>
-      <td>32</td>
-      <td>Ayax y Prok</td>
-      <td>Reproches</td>
-      <td>Sin álbum, es un vídeo suelto</td>
-      <td>[Ayax]\nMujeres, mujeres, más mujeres,\nMañana...</td>
-      <td>2017</td>
-      <td>64603</td>
-      <td>[[0.010262886, 0.11039482, -0.087359086, -0.13...</td>
-      <td>-0.216304</td>
-      <td>0.006051</td>
-    </tr>
-    <tr>
-      <th>5735</th>
-      <td>40</td>
-      <td>C. Tangana</td>
-      <td>Mala mujer</td>
-      <td>Ídolo</td>
-      <td>[Estribillo]\nMala mujer, mala mujer,\nMe han ...</td>
-      <td>2017</td>
-      <td>129447</td>
-      <td>[[0.013601986, 0.07629758, -0.035154782, -0.17...</td>
-      <td>-0.384657</td>
-      <td>0.009203</td>
-    </tr>
-    <tr>
-      <th>6224</th>
-      <td>34</td>
-      <td>Lágrimas de sangre</td>
-      <td>La gente</td>
-      <td>Viridarquía</td>
-      <td>[Microbio]\nHay gente mala, mala, que está lle...</td>
-      <td>2016</td>
-      <td>68179</td>
-      <td>[[0.019248499, 0.11607857, -0.08562771, -0.158...</td>
-      <td>-0.153749</td>
-      <td>0.006106</td>
-    </tr>
-    <tr>
-      <th>6305</th>
-      <td>5</td>
-      <td>Kase.O</td>
-      <td>Basureta (Tiempos raros)</td>
-      <td>El círculo</td>
-      <td>Aburrimiento visceral, hipocondría, angustia c...</td>
-      <td>2016</td>
-      <td>132558</td>
-      <td>[[0.020437742, 0.10293887, -0.08933044, -0.157...</td>
-      <td>-0.299018</td>
-      <td>0.008240</td>
-    </tr>
-    <tr>
-      <th>6307</th>
-      <td>7</td>
-      <td>Kase.O</td>
-      <td>Viejos ciegos (con Xhelazz y Sho</td>
-      <td>El círculo</td>
-      <td>[Kase.O]\nHe sido el típico chico tímido, desi...</td>
-      <td>2016</td>
-      <td>78700</td>
-      <td>[[0.012569118, 0.09340674, -0.07869768, -0.146...</td>
-      <td>0.191641</td>
-      <td>-0.001601</td>
-    </tr>
-    <tr>
-      <th>6308</th>
-      <td>8</td>
-      <td>Kase.O</td>
-      <td>Yemen</td>
-      <td>El círculo</td>
-      <td>Me da pánico mi propio ego, ciego de mí mismo ...</td>
-      <td>2016</td>
-      <td>65723</td>
-      <td>[[0.0060284506, 0.075354, -0.08504064, -0.1472...</td>
-      <td>0.102571</td>
-      <td>-0.001452</td>
-    </tr>
-    <tr>
-      <th>6309</th>
-      <td>9</td>
-      <td>Kase.O</td>
-      <td>Amor sin cláusulas</td>
-      <td>El círculo</td>
-      <td>A ti que me has pillado, observándote en silen...</td>
-      <td>2016</td>
-      <td>62659</td>
-      <td>[[0.0031294217, 0.085028954, -0.07708733, -0.1...</td>
-      <td>-0.336151</td>
-      <td>0.007797</td>
-    </tr>
-    <tr>
-      <th>6313</th>
-      <td>13</td>
-      <td>Kase.O</td>
-      <td>Mazas y catapultas</td>
-      <td>El círculo</td>
-      <td>Nena tú eres un desliz, una locura, un error,\...</td>
-      <td>2016</td>
-      <td>81115</td>
-      <td>[[-0.02745463, 0.10541961, -0.06775599, -0.156...</td>
-      <td>-0.361216</td>
-      <td>0.007462</td>
-    </tr>
-    <tr>
-      <th>6318</th>
-      <td>18</td>
-      <td>Kase.O</td>
-      <td>Pavos reales (con Hermano L, Shabu One Shant y...</td>
-      <td>El círculo</td>
-      <td>[Kase.O]\nTú no tienes nada que hacer, \nHa ve...</td>
-      <td>2016</td>
-      <td>77963</td>
-      <td>[[0.0069221146, 0.07276665, -0.081392504, -0.1...</td>
-      <td>0.274394</td>
-      <td>-0.005543</td>
-    </tr>
-    <tr>
-      <th>6319</th>
-      <td>19</td>
-      <td>Kase.O</td>
-      <td>Mitad y mitad (con Najwa)</td>
-      <td>El círculo</td>
-      <td>[Kase.O]\nEso que me atrae de ti no sé lo que ...</td>
-      <td>2016</td>
-      <td>95917</td>
-      <td>[[-0.0028821868, 0.087819904, -0.087986924, -0...</td>
-      <td>-0.290511</td>
-      <td>0.005837</td>
-    </tr>
-    <tr>
-      <th>7228</th>
-      <td>48</td>
-      <td>Sharif</td>
-      <td>Dorian Gray</td>
-      <td>Bajo el rayo que no cesa</td>
-      <td>Tengo treinta y cuatro, y soy feliz a veces\nS...</td>
-      <td>2015</td>
-      <td>64746</td>
-      <td>[[0.00578167, 0.08416531, -0.08907955, -0.1520...</td>
-      <td>-0.226253</td>
-      <td>0.006608</td>
-    </tr>
-    <tr>
-      <th>8011</th>
-      <td>6</td>
-      <td>Rayden</td>
-      <td>Matemática de la carne</td>
-      <td>En alma y hueso</td>
-      <td>Fuimos a hacer el amor y parece que volvimos d...</td>
-      <td>2014</td>
-      <td>89893</td>
-      <td>[[0.008068835, 0.097593166, -0.10657368, -0.14...</td>
-      <td>-0.251693</td>
-      <td>0.007535</td>
-    </tr>
-    <tr>
-      <th>8035</th>
-      <td>30</td>
-      <td>Rapsusklei, Sharif y Juaninacka</td>
-      <td>Enero</td>
-      <td>Curso básico de poesía</td>
-      <td>[Sharif]\nSi pudiera volver a empezar de nuevo...</td>
-      <td>2014</td>
-      <td>72084</td>
-      <td>[[0.030449811, 0.09076137, -0.09856376, -0.151...</td>
-      <td>-0.296388</td>
-      <td>0.008507</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
